@@ -11,6 +11,7 @@
 7.Buttons
 8.Header
 9.Main navigation
+10.Footer
 
 --------------------------------------------------------------------------------------*/
 
@@ -396,6 +397,24 @@ body {
   margin-left: -15px;
 }
 
+@media (min-width: 992px) {
+  .col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .offset-lg-5 {
+    margin-left: 41.666667%;
+  }
+}
+
 /*-------------------------------------------------------------------------------------
     5-Spaces
 ---------------------------------------------------------------------------------------*/
@@ -414,6 +433,19 @@ body {
 
 .m__t-7 {
   margin-top: 7px;
+}
+
+.m__t-30 {
+  margin-top: 30px;
+}
+
+.m__b-0,
+.footer__main a.m__b-0 {
+  margin-bottom: 0px;
+}
+
+.m__b-30 {
+  margin-bottom: 30px;
 }
 
 .m__r-25 {
@@ -499,6 +531,10 @@ body {
 
 .relative {
   position: relative;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 @media (min-width: 768px) {
@@ -739,5 +775,37 @@ body {
 
   .main__nav-list li {
     margin: 0 0 40px;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+    10-Footer
+---------------------------------------------------------------------------------------*/
+.footer__main {
+  display: none;
+  font-size: 16px;
+}
+
+.footer__main a {
+  text-decoration: none;
+  color: var(--white);
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.footer__title {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .footer__main {
+    background-color: var(--main-blue);
+    color: white;
+    display: block;
+    padding: 88px 62px 106px;
   }
 }
