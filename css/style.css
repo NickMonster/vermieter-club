@@ -8,8 +8,9 @@
 4.Grid styles
 5.Spaces
 6.Common styles
-7.Header
-8.Main navigation
+7.Buttons
+8.Header
+9.Main navigation
 
 --------------------------------------------------------------------------------------*/
 
@@ -19,6 +20,10 @@
 :root {
   --main-blue: #0d4efe;
   --white: #fff;
+  --orange: #f5b841;
+
+  --main-font: 'SourceSansPro-Regular';
+  --semibold-font: 'SourceSansPro-SemiBold';
 }
 
 /*-------------------------------------------------------------------------------------
@@ -235,48 +240,53 @@ textarea {
 ---------------------------------------------------------------------------------------*/
 @font-face {
   font-family: 'SourceSansPro-Regular';
-  src: url('fonts/Source-Sans-Pro/SourceSansPro-Regular.eot');
-  src: url('fonts/Source-Sans-Pro/SourceSansPro-Regular.eot?#iefix')
+  src: url('../fonts/Source-Sans-Pro/SourceSansPro-Regular.eot');
+  src: url('../fonts/Source-Sans-Pro/SourceSansPro-Regular.eot?#iefix')
       format('embedded-opentype'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Regular.svg#SourceSansPro-Regular')
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Regular.svg#SourceSansPro-Regular')
       format('svg'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf') format('truetype'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Regular.woff') format('woff'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Regular.woff2') format('woff2');
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf') format('truetype'),
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Regular.woff') format('woff'),
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SourceSansPro-SemiBold';
-  src: url('fonts/Source-Sans-Pro/SourceSansPro-SemiBold.eot');
-  src: url('fonts/Source-Sans-Pro/SourceSansPro-SemiBold.eot?#iefix')
+  src: url('../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.eot');
+  src: url('../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.eot?#iefix')
       format('embedded-opentype'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-SemiBold.svg#SourceSansPro-SemiBold')
+    url('../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.svg#SourceSansPro-SemiBold')
       format('svg'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-SemiBold.ttf') format('truetype'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-SemiBold.woff') format('woff'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-SemiBold.woff2') format('woff2');
+    url('../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.ttf')
+      format('truetype'),
+    url('../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.woff') format('woff'),
+    url('../fonts/Source-Sans-Pro/SourceSansPro-SemiBold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SourceSansPro-Bold';
-  src: url('fonts/Source-Sans-Pro/SourceSansPro-Bold.eot');
-  src: url('fonts/Source-Sans-Pro/SourceSansPro-Bold.eot?#iefix')
+  src: url('../fonts/Source-Sans-Pro/SourceSansPro-Bold.eot');
+  src: url('../fonts/Source-Sans-Pro/SourceSansPro-Bold.eot?#iefix')
       format('embedded-opentype'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Bold.svg#SourceSansPro-Bold')
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Bold.svg#SourceSansPro-Bold')
       format('svg'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Bold.ttf') format('truetype'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Bold.woff') format('woff'),
-    url('fonts/Source-Sans-Pro/SourceSansPro-Bold.woff2') format('woff2');
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Bold.ttf') format('truetype'),
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Bold.woff') format('woff'),
+    url('../fonts/Source-Sans-Pro/SourceSansPro-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'SourceSansPro-Regular';
+  font-family: var(--main-font);
+}
+
+.font__size-24 {
+  font-size: 24px;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -410,17 +420,60 @@ body {
   margin-right: 25px;
 }
 
+.m__r-35 {
+  margin-right: 35px;
+}
+
 .m__r-50 {
   margin-right: 50px;
+}
+
+.m__l-10 {
+  margin-left: 10px;
+}
+
+.m__l-30 {
+  margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+  .p-md__t-25 {
+    padding-top: 25px;
+  }
+
+  .p-md__b-32 {
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .m-lg__r-25 {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .m-lg__r-0 {
+    margin-right: 0;
+  }
 }
 
 /*-------------------------------------------------------------------------------------
     6-Common styles
 ---------------------------------------------------------------------------------------*/
+.align-items-center {
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
+}
+
+.d-none {
+  display: none !important;
 }
 
 .float-right {
@@ -439,29 +492,173 @@ body {
   justify-content: flex-end !important;
 }
 
+.order-2 {
+  -ms-flex-order: 2;
+  order: 2;
+}
+
 .relative {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .d-md-inline-block {
+    display: inline-block !important;
+  }
+
+  .d-md-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .d-md-none {
+    display: none !important;
+  }
+
+  .order-md-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .order-md-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .order-md-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .order-md-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+}
+
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none !important;
+  }
+
+  .d-lg-inline-block {
+    display: inline-block !important;
+  }
+
+  .d-lg-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .order-lg-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .order-lg-3 {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .order-lg-4 {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .order-lg-5 {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order-xl-1 {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media (min-width: 1500px) {
+  .d-xll-inline-block {
+    display: inline-block !important;
+  }
+}
+
 /*-------------------------------------------------------------------------------------
-    7-Header
+    7-Button
 ---------------------------------------------------------------------------------------*/
+@media (min-width: 1200px) {
+  .header__main a.btn__lg-primary-white {
+    border-radius: 10px;
+    background-color: var(--white);
+    color: var(--main-blue);
+    padding: 23px 28px 20px;
+  }
+
+  .header__main a.btn__lg-primary-white svg {
+    fill: var(--main-blue);
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+    8-Header
+---------------------------------------------------------------------------------------*/
+.cart__number {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  color: var(--main-blue);
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: var(--orange);
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  z-index: 2;
+  text-align: center;
+  line-height: 1em;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  padding-top: 3px;
+}
+
 .header__main {
   background-color: var(--main-blue);
 }
 
+.header__main a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header__main a svg {
+  fill: var(--white);
+}
+
 /*-------------------------------------------------------------------------------------
-    8-Main navigation
+    9-Main navigation
 ---------------------------------------------------------------------------------------*/
-.main__nav input,
-.main__nav-list {
+.main__nav input {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 1200px) {
+  .main__nav-list li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 15px 0 0;
+  }
+}
+
+@media (min-width: 1500px) {
+  .main__nav-list li {
+    margin: 0 50px 0 0;
+  }
+}
+
+@media (max-width: 1199px) {
   .menu__nav-toggle {
     display: block;
-    position: relative;
     top: 7px;
     left: 0px;
     z-index: 1;
@@ -469,18 +666,13 @@ body {
     user-select: none;
   }
 
-  .main__nav a {
-    text-decoration: none;
-    color: var(--white);
-  }
-
   .main__nav input {
     display: block;
     width: 67px;
     height: 50px;
     position: absolute;
-    top: -17px;
-    left: -5px;
+    top: 20px;
+    right: 30px;
     cursor: pointer;
     opacity: 0;
     z-index: 2;
@@ -523,20 +715,29 @@ body {
   }
 
   .main__nav-list {
-    position: absolute;
-    width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    background: #ededed;
+    position: fixed;
+    display: block;
+    width: 100%;
+    padding: 58px;
+    margin: 100px 0 0;
+    background: var(--main-blue);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 2;
+    font-size: 26px;
   }
 
   .main__nav input:checked ~ ul {
     transform: none;
+  }
+
+  .main__nav-list li {
+    margin: 0 0 40px;
   }
 }

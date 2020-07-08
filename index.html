@@ -6,27 +6,80 @@
     <title>Vermieter Club</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
-  <body>
-    <header class="header__main relative">
+  <body class="relative">
+    <header class="header__main">
       <div class="container-fluid">
         <div class="row">
-          <div class="col p__t-28 p__b-20 p__x-30">
+          <div
+            class="col p__t-28 p-md__t-25 p__b-20 p-md__b-32 p__x-30 d-flex align-items-center justify-content-between"
+          >
             <a href="/">
-              <img src="img/logo-small.svg" alt="" width="45" />
+              <img
+                src="img/logo-small.svg"
+                alt=""
+                width="45"
+                class="d-lg-none"
+              />
+              <img
+                src="img/logo.svg"
+                alt=""
+                width="206"
+                class="d-none d-lg-inline-block"
+              />
             </a>
 
-            <div class="d-flex float-right m__t-7">
-              <a href="#" class="m__r-25">
+            <div class="d-flex align-items-center m__t-7">
+              <a
+                href="#"
+                class="order-2 d-none d-lg-flex align-items-center m__r-35"
+              >
+                <img src="img/login.svg" alt="" width="44" />
+                <span class="m__l-10 d-none d-xll-inline-block"
+                  >Antrag auf Mitgliedschaft</span
+                >
+              </a>
+              <a href="#" class="m__r-25 order-2 order-lg-4">
                 <img src="img/search.svg" alt="" width="37" />
               </a>
-              <a href="#" class="m__r-25">
-                <img src="img/user.svg" alt="" width="31" />
+              <a
+                href="#"
+                class="m__r-25 m-lg__r-0 order-2 order-lg-5 d-md-flex align-items-center btn__lg-primary-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30.818"
+                  height="36.939"
+                  viewBox="0 0 30.818 36.939"
+                >
+                  <g transform="translate(0)">
+                    <path
+                      class="a"
+                      d="M95.928,17.794a8.608,8.608,0,0,0,6.291-2.607A8.608,8.608,0,0,0,104.825,8.9a8.61,8.61,0,0,0-2.607-6.291,8.895,8.895,0,0,0-12.581,0A8.609,8.609,0,0,0,87.031,8.9a8.608,8.608,0,0,0,2.607,6.291A8.611,8.611,0,0,0,95.928,17.794Zm0,0"
+                      transform="translate(-80.752 0)"
+                    />
+                    <path
+                      class="a"
+                      d="M30.743,257.878a21.974,21.974,0,0,0-.3-2.334,18.39,18.39,0,0,0-.574-2.347,11.592,11.592,0,0,0-.965-2.189,8.258,8.258,0,0,0-1.455-1.9,6.415,6.415,0,0,0-2.09-1.313,7.221,7.221,0,0,0-2.668-.483,2.708,2.708,0,0,0-1.446.613c-.433.283-.94.61-1.506.971a8.634,8.634,0,0,1-1.949.859,7.569,7.569,0,0,1-4.768,0,8.613,8.613,0,0,1-1.948-.858c-.561-.358-1.068-.685-1.508-.972a2.7,2.7,0,0,0-1.445-.613,7.213,7.213,0,0,0-2.667.483,6.41,6.41,0,0,0-2.09,1.313,8.261,8.261,0,0,0-1.454,1.9A11.615,11.615,0,0,0,.947,253.2a18.434,18.434,0,0,0-.574,2.346,21.9,21.9,0,0,0-.3,2.335c-.049.707-.074,1.44-.074,2.181A6.134,6.134,0,0,0,1.822,264.7a6.558,6.558,0,0,0,4.694,1.712H24.3A6.557,6.557,0,0,0,29,264.7a6.131,6.131,0,0,0,1.822-4.641C30.818,259.315,30.793,258.581,30.743,257.878Zm0,0"
+                      transform="translate(0 -229.474)"
+                    />
+                  </g>
+                </svg>
+                <span class="m__l-30 d-none d-lg-inline-block font__size-24"
+                  >Zum Login</span
+                >
               </a>
-              <a href="#" class="m__r-50">
+              <a
+                href="#"
+                class="m__r-50 m-lg__r-25 order-2 order-lg-3 relative"
+              >
                 <img src="img/commerce-and-shopping.svg" alt="" width="40" />
+                <sup class="cart__number">3</sup>
               </a>
 
-              <nav role="navigation" class="main__nav">
+              <nav
+                role="navigation"
+                class="main__nav order-2 order-lg-5 order-xl-1"
+              >
                 <div class="menu__nav-toggle">
                   <input type="checkbox" />
                   <span></span>
@@ -42,8 +95,6 @@
                 </div>
               </nav>
             </div>
-
-            <!-- Antrag auf Mitgliedschaft Zum Login -->
           </div>
         </div>
       </div>
