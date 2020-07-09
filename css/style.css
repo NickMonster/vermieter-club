@@ -979,6 +979,16 @@ p {
   margin-bottom: 29px;
 }
 
+.plan__item.checked {
+  background-color: var(--main-blue);
+  color: white;
+}
+
+.plan__item.checked h3,
+.plan__item.checked .plan__price {
+  color: white;
+}
+
 .plan__item h3 {
   color: var(--text-blue);
   font-size: 24px;
@@ -1086,6 +1096,11 @@ label {
 
 .input__text.invalid {
   border: 2px solid var(--red-main);
+}
+
+.hidden-radio {
+  opacity: 0;
+  position: absolute;
 }
 
 .select__custom {
