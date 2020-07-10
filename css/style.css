@@ -559,6 +559,10 @@ p {
   margin-top: 7px;
 }
 
+.m__t-16 {
+  margin-top: 16px;
+}
+
 .m__t-24 {
   margin-top: 24px;
 }
@@ -591,6 +595,10 @@ p {
 
 .m__b-40 {
   margin-bottom: 40px;
+}
+
+.m__b-60 {
+  margin-bottom: 60px;
 }
 
 .m__b-72,
@@ -1002,6 +1010,66 @@ p {
 /*-------------------------------------------------------------------------------------
     11-Content
 ---------------------------------------------------------------------------------------*/
+.path__custom {
+  color: var(--white);
+  background-color: var(--main-blue);
+  font-size: 20px;
+  padding: 21px 0 0;
+}
+
+.path__custom li {
+  display: inline-block;
+  line-height: 30px;
+  margin-right: 33px;
+  position: relative;
+  padding-right: 25px;
+  padding-left: 15px;
+  padding-bottom: 8px;
+  margin-bottom: -10px;
+}
+
+.path__custom li.active {
+  border-bottom: 20px solid var(--orange);
+}
+
+.path__custom li.active:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent var(--orange);
+  right: -20px;
+  bottom: -20px;
+}
+
+.path__custom li:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 0 17px 26px;
+  border-color: transparent transparent transparent #ffffff;
+  right: -20px;
+}
+
+.path__custom li:last-child {
+  padding-right: 0;
+}
+
+.path__custom li:last-child:after {
+  display: none;
+}
+
+.path__custom .circle__before {
+  color: var(--white);
+  border-color: var(--white);
+}
+
 .plan__item {
   border: 2px solid var(--main-blue);
   padding: 32px 10px 36px;
