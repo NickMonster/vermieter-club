@@ -1,4 +1,4 @@
-/*------------------------------------------------------------------------------------
+/* ------------------------------------------------------------------------------------
 
 [Table of contents]
 
@@ -15,11 +15,11 @@
 11.Content
 12.Forms
 
---------------------------------------------------------------------------------------*/
+-------------------------------------------------------------------------------------- */
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     1-Variables
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 :root {
   --main-blue: #0d4efe;
   --text-blue: #0e0e65;
@@ -29,17 +29,16 @@
   --grey-text-2: #a3a3a3;
   --grey-border: #bebebe;
   --green-main: #2fb26b;
-  --red-main: #ff0000;
+  --red-main: #f00;
   --main-text: #363636;
-
   --main-font: 'SourceSansPro-Regular';
   --semibold-font: 'SourceSansPro-SemiBold';
   --bold-font: 'SourceSansPro-Bold';
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     2-Reset
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 * {
   box-sizing: border-box;
 }
@@ -144,9 +143,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
@@ -246,9 +242,9 @@ textarea {
   padding: 0;
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     3-Typography
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 @font-face {
   font-family: 'SourceSansPro-Regular';
   src: url('../fonts/Source-Sans-Pro/SourceSansPro-Regular.eot');
@@ -296,6 +292,7 @@ body {
   font-family: var(--main-font);
   color: var(--main-text);
   font-size: 15px;
+  line-height: 1;
 }
 
 .color__blue {
@@ -353,9 +350,14 @@ p {
   line-height: 1.3;
 }
 
+.lh-1-5 {
+  line-height: 1.5;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 45px;
+    line-height: 64px;
   }
 
   .font__size-md-20 {
@@ -370,9 +372,9 @@ p {
   }
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     4-Grid styles
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 .col,
 .col-1,
 .col-10,
@@ -524,10 +526,6 @@ p {
 }
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-
   .col-xl-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
@@ -535,9 +533,15 @@ p {
   }
 }
 
-/*-------------------------------------------------------------------------------------
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
+/* -------------------------------------------------------------------------------------
     5-Spaces
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 .p__t-28 {
   padding-top: 28px;
 }
@@ -548,6 +552,10 @@ p {
 
 .p__l-15 {
   padding-left: 15px;
+}
+
+.p__l-30 {
+  padding-left: 30px;
 }
 
 .p__x-30 {
@@ -569,6 +577,10 @@ p {
 
 .m__t-30 {
   margin-top: 30px;
+}
+
+.m__t-94 {
+  margin-top: 94px;
 }
 
 .m__b-0,
@@ -606,6 +618,14 @@ p {
   margin-bottom: 72px;
 }
 
+.m__r-auto {
+  margin-right: auto;
+}
+
+.m__r-10 {
+  margin-right: 10px;
+}
+
 .m__r-25 {
   margin-right: 25px;
 }
@@ -637,20 +657,45 @@ p {
 }
 
 @media (min-width: 992px) {
-  .m-lg__r-25 {
-    margin-right: 25px;
+  .m-lg__t-94 {
+    margin-top: 94px;
   }
-}
 
-@media (min-width: 1200px) {
   .m-lg__r-0 {
     margin-right: 0;
   }
+
+  .m-lg__r-25 {
+    margin-right: 25px;
+  }
+
+  .m-lg__r-35 {
+    margin-right: 35px;
+  }
+
+  .m-lg__r-50 {
+    margin-right: 50px;
+  }
+
+  .p-lg__l-50 {
+    padding-left: 50px;
+  }
 }
 
-/*-------------------------------------------------------------------------------------
+@media (min-width: 1500px) {
+  .p-xll__l-116 {
+    padding-left: 116px;
+  }
+}
+
+/* -------------------------------------------------------------------------------------
     6-Common styles
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
+label {
+  display: inline-block;
+  margin-bottom: 19px;
+}
+
 .align-items-center {
   -ms-flex-align: center !important;
   align-items: center !important;
@@ -707,6 +752,10 @@ p {
 
 .text-center {
   text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
 }
 
 .w-100 {
@@ -784,9 +833,17 @@ p {
 }
 
 @media (min-width: 1200px) {
+  .d-xl-inline-block {
+    display: inline-block !important;
+  }
+
   .order-xl-1 {
     -ms-flex-order: 1;
     order: 1;
+  }
+
+  .w-xl-100 {
+    width: 100%;
   }
 }
 
@@ -796,9 +853,9 @@ p {
   }
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     7-Button
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 .btn__orange,
 .btn__blue {
   border-radius: 7px;
@@ -817,7 +874,11 @@ p {
 .btn__blue {
   background-color: var(--main-blue);
   color: var(--white);
-  border: 1px solid #707070;
+  border: none;
+}
+
+.btn__blue:focus {
+  outline: none;
 }
 
 @media (min-width: 1200px) {
@@ -825,7 +886,7 @@ p {
     border-radius: 10px;
     background-color: var(--white);
     color: var(--main-blue);
-    padding: 23px 28px 20px;
+    padding: 20px 28px 18px;
   }
 
   .header__main a.btn__lg-primary-white svg {
@@ -833,9 +894,9 @@ p {
   }
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     8-Header
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 .cart__number {
   position: absolute;
   right: -10px;
@@ -868,9 +929,29 @@ p {
   fill: var(--white);
 }
 
-/*-------------------------------------------------------------------------------------
+.logo__mobile {
+  position: relative;
+  z-index: 3;
+}
+
+.login__icon:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30.818' height='36.939' viewBox='0 0 30.818 36.939'%3E%3Cg transform='translate(0)' fill='%23fff'%3E%3Cpath class='a' d='M95.928,17.794a8.608,8.608,0,0,0,6.291-2.607A8.608,8.608,0,0,0,104.825,8.9a8.61,8.61,0,0,0-2.607-6.291,8.895,8.895,0,0,0-12.581,0A8.609,8.609,0,0,0,87.031,8.9a8.608,8.608,0,0,0,2.607,6.291A8.611,8.611,0,0,0,95.928,17.794Zm0,0' transform='translate(-80.752 0)' /%3E%3Cpath class='a' d='M30.743,257.878a21.974,21.974,0,0,0-.3-2.334,18.39,18.39,0,0,0-.574-2.347,11.592,11.592,0,0,0-.965-2.189,8.258,8.258,0,0,0-1.455-1.9,6.415,6.415,0,0,0-2.09-1.313,7.221,7.221,0,0,0-2.668-.483,2.708,2.708,0,0,0-1.446.613c-.433.283-.94.61-1.506.971a8.634,8.634,0,0,1-1.949.859,7.569,7.569,0,0,1-4.768,0,8.613,8.613,0,0,1-1.948-.858c-.561-.358-1.068-.685-1.508-.972a2.7,2.7,0,0,0-1.445-.613,7.213,7.213,0,0,0-2.667.483,6.41,6.41,0,0,0-2.09,1.313,8.261,8.261,0,0,0-1.454,1.9A11.615,11.615,0,0,0,.947,253.2a18.434,18.434,0,0,0-.574,2.346,21.9,21.9,0,0,0-.3,2.335c-.049.707-.074,1.44-.074,2.181A6.134,6.134,0,0,0,1.822,264.7a6.558,6.558,0,0,0,4.694,1.712H24.3A6.557,6.557,0,0,0,29,264.7a6.131,6.131,0,0,0,1.822-4.641C30.818,259.315,30.793,258.581,30.743,257.878Zm0,0' transform='translate(0 -229.474)' /%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 37px;
+}
+
+@media (min-width: 1200px) {
+  .login__icon:before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30.818' height='36.939' viewBox='0 0 30.818 36.939'%3E%3Cg transform='translate(0)' fill='%230d4efe'%3E%3Cpath class='a' d='M95.928,17.794a8.608,8.608,0,0,0,6.291-2.607A8.608,8.608,0,0,0,104.825,8.9a8.61,8.61,0,0,0-2.607-6.291,8.895,8.895,0,0,0-12.581,0A8.609,8.609,0,0,0,87.031,8.9a8.608,8.608,0,0,0,2.607,6.291A8.611,8.611,0,0,0,95.928,17.794Zm0,0' transform='translate(-80.752 0)' /%3E%3Cpath class='a' d='M30.743,257.878a21.974,21.974,0,0,0-.3-2.334,18.39,18.39,0,0,0-.574-2.347,11.592,11.592,0,0,0-.965-2.189,8.258,8.258,0,0,0-1.455-1.9,6.415,6.415,0,0,0-2.09-1.313,7.221,7.221,0,0,0-2.668-.483,2.708,2.708,0,0,0-1.446.613c-.433.283-.94.61-1.506.971a8.634,8.634,0,0,1-1.949.859,7.569,7.569,0,0,1-4.768,0,8.613,8.613,0,0,1-1.948-.858c-.561-.358-1.068-.685-1.508-.972a2.7,2.7,0,0,0-1.445-.613,7.213,7.213,0,0,0-2.667.483,6.41,6.41,0,0,0-2.09,1.313,8.261,8.261,0,0,0-1.454,1.9A11.615,11.615,0,0,0,.947,253.2a18.434,18.434,0,0,0-.574,2.346,21.9,21.9,0,0,0-.3,2.335c-.049.707-.074,1.44-.074,2.181A6.134,6.134,0,0,0,1.822,264.7a6.558,6.558,0,0,0,4.694,1.712H24.3A6.557,6.557,0,0,0,29,264.7a6.131,6.131,0,0,0,1.822-4.641C30.818,259.315,30.793,258.581,30.743,257.878Zm0,0' transform='translate(0 -229.474)' /%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+/* -------------------------------------------------------------------------------------
     9-Main navigation
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 .main__nav input {
   display: none;
 }
@@ -885,7 +966,7 @@ p {
 
 @media (min-width: 1500px) {
   .main__nav-list li {
-    margin: 0 50px 0 0;
+    margin: 0 40px 0 0;
   }
 }
 
@@ -908,7 +989,7 @@ p {
     right: 30px;
     cursor: pointer;
     opacity: 0;
-    z-index: 2;
+    z-index: 4;
     -webkit-touch-callout: none;
   }
 
@@ -919,7 +1000,7 @@ p {
     margin-bottom: 10px;
     position: relative;
     background: var(--white);
-    z-index: 1;
+    z-index: 4;
     transform-origin: 13px -5px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
@@ -951,8 +1032,8 @@ p {
     position: fixed;
     display: block;
     width: 100%;
-    padding: 58px;
-    margin: 100px 0 0;
+    padding: 200px 58px 58px;
+    margin: 0;
     background: var(--main-blue);
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -975,12 +1056,15 @@ p {
   }
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     10-Footer
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 .footer__main {
-  display: none;
   font-size: 16px;
+  background-color: var(--main-blue);
+  color: white;
+  padding: 40px 0 0;
+  text-align: center;
 }
 
 .footer__main a {
@@ -1000,16 +1084,14 @@ p {
 
 @media (min-width: 992px) {
   .footer__main {
-    background-color: var(--main-blue);
-    color: white;
-    display: block;
     padding: 88px 62px 106px;
+    text-align: left;
   }
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     11-Content
----------------------------------------------------------------------------------------*/
+--------------------------------------------------------------------------------------- */
 .path__custom {
   color: var(--white);
   background-color: var(--main-blue);
@@ -1053,7 +1135,7 @@ p {
   height: 0;
   border-style: solid;
   border-width: 17px 0 17px 26px;
-  border-color: transparent transparent transparent #ffffff;
+  border-color: transparent transparent transparent #fff;
   right: -20px;
 }
 
@@ -1072,22 +1154,13 @@ p {
 
 .plan__item {
   border: 2px solid var(--main-blue);
-  padding: 32px 10px 36px;
+  padding: 32px 10px 60px;
   text-align: center;
   font-size: 22px;
   color: var(--text-blue);
   border-radius: 10px;
-  margin-bottom: 29px;
-}
-
-.plan__item.checked {
-  background-color: var(--main-blue);
-  color: white;
-}
-
-.plan__item.checked h3,
-.plan__item.checked .plan__price {
-  color: white;
+  height: 100%;
+  position: relative;
 }
 
 .plan__item h3 {
@@ -1096,6 +1169,14 @@ p {
   font-family: var(--bold-font);
   margin-bottom: 28px;
   line-height: 1.4em;
+}
+
+.plan__item label {
+  margin-bottom: 19px;
+  bottom: 5px;
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
 .plan__price {
@@ -1120,6 +1201,22 @@ p {
 
 .plan__price p {
   line-height: 1.3;
+}
+
+.plan__item.checked,
+.plan__item:hover,
+.plan__item:active {
+  background-color: var(--main-blue);
+  color: white;
+}
+
+.plan__item.checked h3,
+.plan__item.checked .plan__price,
+.plan__item:hover h3,
+.plan__item:active h3,
+.plan__item:hover .plan__price,
+.plan__item:active .plan__price {
+  color: white;
 }
 
 @media (min-width: 992px) {
@@ -1151,14 +1248,9 @@ p {
   }
 }
 
-/*-------------------------------------------------------------------------------------
+/* -------------------------------------------------------------------------------------
     12-Forms
----------------------------------------------------------------------------------------*/
-label {
-  display: inline-block;
-  margin-bottom: 19px;
-}
-
+--------------------------------------------------------------------------------------- */
 .checkbox__custom {
   position: absolute;
   opacity: 0;
@@ -1175,20 +1267,12 @@ label {
   margin-right: 10px;
   margin-top: -4px;
   margin-left: -39px;
-  width: 26px;
+  width: 27px;
   height: 27px;
   background: white;
-  border: 1px solid var(--grey-border);
+  border: 2px solid var(--main-blue);
   float: left;
-}
-
-.checkbox__custom:hover + label:before,
-.checkbox__custom:focus + label:before {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.12);
-}
-
-.checkbox__custom:checked + label:before {
-  background: var(--main-blue);
+  border-radius: 5px;
 }
 
 .checkbox__custom:disabled + label {
@@ -1204,12 +1288,12 @@ label {
 .checkbox__custom:checked + label:after {
   content: '';
   position: absolute;
-  left: 5px;
+  left: 6px;
   top: 2px;
   width: 20px;
   height: 18px;
   background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38.3 36.64'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='1.6 20.31 20.6 32.31 35.6 1.31' style='fill:none;stroke:%230d4efe;stroke-miterlimit:10;stroke-width:6px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .input__text {
@@ -1218,6 +1302,7 @@ label {
   padding: 0.6em 1.4em 0.5em 0.8em;
   width: 100%;
   border: 2px solid var(--grey-border);
+  border-radius: 0.25rem;
 }
 
 .input__text.valid {
@@ -1226,6 +1311,12 @@ label {
 
 .input__text.invalid {
   border: 2px solid var(--red-main);
+}
+
+.input__text:not(.valid):not(.invalid):not([disabled]):focus,
+.input__text:not(.valid):not(.invalid):not([disabled]):hover {
+  box-shadow: 0 0 0 0.2rem rgba(64, 61, 157, 0.25);
+  border: 2px solid var(--main-blue);
 }
 
 .hidden-radio {
@@ -1243,7 +1334,6 @@ label {
   margin: 0;
   border: 2px solid var(--grey-border);
   box-shadow: none;
-  border-radius: 0;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -1252,17 +1342,16 @@ label {
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
+  border-radius: 0.25rem;
 }
 
 .select__custom:-ms-expand {
   display: none;
 }
-.select__custom:hover,
-.input__text:hover {
+.select__custom:hover {
   border-color: var(--main-blue);
 }
-.select__custom:focus,
-.input__text:focus {
+.select__custom:focus {
   border-color: var(--main-blue);
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
