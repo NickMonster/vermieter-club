@@ -582,6 +582,10 @@ p {
   padding-right: 30px;
 }
 
+.m__t-0 {
+  margin-top: 0;
+}
+
 .m__t-7 {
   margin-top: 7px;
 }
@@ -604,6 +608,15 @@ p {
 
 .m__t-94 {
   margin-top: 94px;
+}
+
+.m__t-100 {
+  margin-top: 100px;
+}
+
+.m__t-107,
+.main__nav-list li.m__t-107 {
+  margin-top: 107px;
 }
 
 .m__b-0,
@@ -684,6 +697,10 @@ p {
 }
 
 @media (min-width: 992px) {
+  .m-lg__t-0 {
+    margin-top: 0;
+  }
+
   .m-lg__t-94 {
     margin-top: 94px;
   }
@@ -862,6 +879,10 @@ label {
     -ms-flex-order: 5;
     order: 5;
   }
+
+  .text-lg-right {
+    text-align: right !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -893,7 +914,8 @@ label {
     7-Button
 --------------------------------------------------------------------------------------- */
 .btn__orange,
-.btn__blue {
+.btn__blue,
+.btn__white {
   border-radius: 7px;
   font-size: 21px;
   padding: 15px 52px;
@@ -916,6 +938,14 @@ label {
 
 .btn__blue:focus {
   outline: none;
+}
+
+.btn__white,
+.header__main a.btn__white {
+  font-size: 24px;
+  color: var(--main-blue);
+  background-color: white;
+  padding: 23px 67px 25px;
 }
 
 @media (min-width: 1200px) {
@@ -1059,11 +1089,11 @@ label {
 
   .main__nav-list .selected + ul {
     position: absolute;
-    top: 52px;
-    left: 0;
+    top: 56px;
+    left: -30px;
     display: inline-block;
     background-color: var(--dark-blue-bg);
-    padding: 16px 15px 8px;
+    padding: 20px 30px 10px;
     z-index: 2;
   }
 
