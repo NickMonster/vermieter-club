@@ -23,6 +23,7 @@
 :root {
   --main-blue: #0d4efe;
   --text-blue: #0e0e65;
+  --dark-blue-bg: #000865;
   --white: #fff;
   --orange: #f5b841;
   --grey-text: #6c6c6c;
@@ -374,8 +375,8 @@ p {
 
 @media (min-width: 1440px) {
   h1 {
-    font-size: 54px;
-    line-height: 70px;
+    font-size: 40px;
+    line-height: 60px;
   }
 }
 
@@ -515,6 +516,13 @@ p {
     max-width: 25%;
   }
 
+  .col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
   .col-lg-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
@@ -525,6 +533,10 @@ p {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
+  }
+
+  .offset-lg-2 {
+    margin-left: 16.666667%;
   }
 
   .offset-lg-5 {
@@ -584,6 +596,10 @@ p {
 
 .m__t-30 {
   margin-top: 30px;
+}
+
+.m__t-50 {
+  margin-top: 50px;
 }
 
 .m__t-94 {
@@ -647,6 +663,10 @@ p {
 
 .m__l-10 {
   margin-left: 10px;
+}
+
+.m__l-26 {
+  margin-left: 26px;
 }
 
 .m__l-30 {
@@ -840,6 +860,10 @@ label {
 }
 
 @media (min-width: 1200px) {
+  .d-xl-none {
+    display: none !important;
+  }
+
   .d-xl-inline-block {
     display: inline-block !important;
   }
@@ -881,7 +905,7 @@ label {
 
 .btn__orange:hover,
 .btn__orange:active {
-  font-family: var(--bold-font);
+  text-shadow: 0px 0px 1px var(--text-blue);
 }
 
 .btn__blue {
@@ -952,7 +976,7 @@ label {
 }
 
 .login__icon-desktop img {
-  width: 44px;
+  width: 41px;
 }
 
 .login__icon:before {
@@ -961,11 +985,12 @@ label {
   content: '';
   display: inline-block;
   width: 32px;
-  height: 37px;
+  height: 39px;
+  background-size: 32px auto;
 }
 
 .search__icon img {
-  width: 37px;
+  width: 40px;
 }
 
 @media (min-width: 1200px) {
@@ -1001,11 +1026,65 @@ label {
   display: none;
 }
 
+.main__nav-list {
+  color: white;
+  cursor: pointer;
+}
+
+.main__nav-list div {
+  position: relative;
+}
+
+.main__nav-list ul {
+  display: none;
+  font-size: 18px;
+  margin-top: 23px;
+}
+
+.main__nav-list ul li {
+  margin: 0 0 14px;
+}
+
+.main__nav-list .selected + ul {
+  display: block;
+}
+
 @media (min-width: 1200px) {
   .main__nav-list li {
     display: inline-block;
     font-size: 20px;
     margin: 0 15px 0 0;
+    position: relative;
+  }
+
+  .main__nav-list .selected + ul {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    display: inline-block;
+    background-color: var(--dark-blue-bg);
+    padding: 16px 15px 8px;
+    z-index: 2;
+  }
+
+  .main__nav-list .selected + ul li {
+    font-size: 18px;
+    display: block;
+  }
+
+  .main__nav-list .selected + ul li a {
+    display: block;
+  }
+
+  .main__nav-list .selected + ul li a:hover,
+  .main__nav-list .selected + ul li a:active {
+    text-shadow: 0px 0px 2px white;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main__nav-list .selected + ul {
+    top: 52px;
   }
 }
 
@@ -1023,6 +1102,21 @@ label {
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
+  }
+
+  .main__nav-list div:after {
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.7 40.53'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='2.87 2.83 33.87 34.83 65.87 2.83' style='fill:none;stroke:%23fff;stroke-miterlimit:10;stroke-width:8px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    position: relative;
+    left: 150px;
+  }
+
+  .main__nav-list div.selected:after {
+    transform: rotate(180deg);
   }
 
   .main__nav input {
@@ -1129,7 +1223,7 @@ label {
 
 @media (min-width: 992px) {
   .footer__main {
-    padding: 88px 62px 106px;
+    padding: 88px 62px 55px;
     text-align: left;
   }
 }
@@ -1294,6 +1388,30 @@ label {
 }
 
 @media (min-width: 1440px) {
+  .plan__item h3 {
+    font-size: 17px;
+  }
+
+  .plan__price {
+    font-size: 52px;
+  }
+
+  .plan__price sup {
+    font-size: 32px;
+  }
+
+  .plan__price sub {
+    font-size: 24px;
+  }
+
+  .plan__price div {
+    font-size: 24px;
+  }
+
+  .plan__item p,
+  .plan__item .btn__orange {
+    font-size: 15px;
+  }
 }
 
 /* -------------------------------------------------------------------------------------

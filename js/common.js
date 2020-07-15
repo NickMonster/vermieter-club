@@ -26,3 +26,20 @@ form.addEventListener(
   },
   false,
 );
+
+// Main menu submenu
+let menu__item = document.querySelector('.main__nav-list div');
+
+menu__item.addEventListener(
+  'click',
+  evt => {
+    let trg = evt.target;
+
+    if (trg.classList.contains('selected')) {
+      trg.classList.remove('selected');
+    } else {
+      trg.classList.add('selected');
+    }
+  },
+  false,
+);
