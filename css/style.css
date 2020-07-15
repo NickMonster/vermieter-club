@@ -367,9 +367,9 @@ p {
 }
 
 @media (min-width: 992px) {
-  .font__size-lg-20,
-  .plan__price.font__size-lg-20 {
-    font-size: 20px;
+  .font__size-lg-30,
+  .plan__price.font__size-lg-30 {
+    font-size: 30px;
   }
 }
 
@@ -688,6 +688,11 @@ p {
     margin-top: 94px;
   }
 
+  .m-lg__b-55,
+  .plan__item h3.m-lg__b-55 {
+    margin-bottom: 55px;
+  }
+
   .m-lg__r-0 {
     margin-right: 0;
   }
@@ -903,11 +908,6 @@ label {
   color: var(--text-blue);
 }
 
-.btn__orange:hover,
-.btn__orange:active {
-  text-shadow: 0px 0px 1px var(--text-blue);
-}
-
 .btn__blue {
   background-color: var(--main-blue);
   color: var(--white);
@@ -1059,7 +1059,7 @@ label {
 
   .main__nav-list .selected + ul {
     position: absolute;
-    top: 55px;
+    top: 52px;
     left: 0;
     display: inline-block;
     background-color: var(--dark-blue-bg);
@@ -1389,7 +1389,7 @@ label {
 
 @media (min-width: 1440px) {
   .plan__item h3 {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .plan__price {
