@@ -28,18 +28,14 @@ form.addEventListener(
 );
 
 // Main menu submenu
-let menu__item = document.querySelector('.main__nav-list div');
+let menu__item = document.querySelectorAll('.hasSubMenu');
 
-menu__item.addEventListener(
-  'click',
-  evt => {
-    let trg = evt.target;
-
-    if (trg.classList.contains('selected')) {
-      trg.classList.remove('selected');
+Array.from(menu__item).forEach(el => {
+  el.addEventListener('click', () => {
+    if (el.classList.contains('selected')) {
+      el.classList.remove('selected');
     } else {
-      trg.classList.add('selected');
+      el.classList.add('selected');
     }
-  },
-  false,
-);
+  });
+});
