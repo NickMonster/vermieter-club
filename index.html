@@ -9,11 +9,10 @@
 </head>
 
 <body class="relative">
-  <header class="header__main">
+  <header class="header__main" id="headerMain">
     <div class="container-fluid">
       <div class="row">
-        <div
-          class="col p__t-28 p-md__t-25 p__b-20 p-md__b-32 p__x-30 d-flex align-items-center justify-content-between">
+        <div class="col p__t-28 p__b-28 p__x-15 p-sm__x-30 d-flex align-items-center justify-content-between">
           <a href="/" class="m-lg__r-35  logo__mobile">
             <img src="img/logo-small.svg" alt="" width="45" class="d-xl-none" />
             <img src="img/logo.svg" alt="" width="206" class="d-none d-xl-inline-block" />
@@ -24,21 +23,21 @@
               <img src="img/login.svg" alt="" />
               <span class="m__l-10 d-none d-xll-inline-block">Antrag auf Mitgliedschaft</span>
             </a>
-            <a href="#" class="m__r-25 m-lg__r-25 order-2 order-lg-4 search__icon">
+            <a href="#" class="m__l-15 m__r-15 m-sm__l-25 m-sm__r-25 order-2 order-lg-4 search__icon">
               <img src="img/search.svg" alt="" />
             </a>
             <a href="#"
               class="m__r-25 m-lg__r-0 order-2 order-lg-5 d-md-flex align-items-center btn__lg-primary-white login__icon">
               <span class="m__l-10 d-none d-lg-inline-block font__size-24">Zum Login</span>
             </a>
-            <a href="#" class="m__r-50 m-lg__r-25 order-2 order-lg-3 relative cart__icon">
+            <a href="#" class="order-2 order-lg-3 relative cart__icon">
               <img src="img/commerce-and-shopping.svg" alt="" />
               <sup class="cart__number">3</sup>
             </a>
 
             <nav role="navigation" class="main__nav order-2 order-lg-5 order-xl-1 p__l-30 m__r-auto">
               <div class="menu__nav-toggle">
-                <input type="checkbox" />
+                <input type="checkbox" id="menuSwitcher" />
                 <span></span>
                 <span></span>
                 <span></span>
@@ -270,7 +269,7 @@
         <div class="col-lg-2">
           <ul>
             <li>
-              <div class="footer__title hasSubMenu">Leistungen</div>
+              <div class="footer__title"><a href="#" class="m__b-0">Leistungen</a></div>
               <ul class="m__b-30">
                 <li><a href="#">Experten Chat</a></li>
                 <li><a href="#">Mediathek</a></li>
@@ -284,7 +283,8 @@
             <li><a href="#" class="footer__title">FAQ</a></li>
           </ul>
         </div>
-        <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 m__t-100 m-lg__t-0 col-lg-5 offset-lg-0 order-lg-2">
+        <div
+          class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 m__t-50 m-lg__t-0 p__t-50 p-lg__t-0 col-lg-5 offset-lg-0 order-lg-2 border__top-15-white border-lg__none newsletter__form">
           <div class="footer__title">Newsletter Anmeldung</div>
           <p class="font__size-20 m__b-30">Sie erhalten regelmäßig Neuigkeiten zu den Themen Vermietung und Immobilien.
           </p>

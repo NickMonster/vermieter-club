@@ -1,5 +1,4 @@
 // Price form options
-
 let form = document.querySelector('form');
 
 form.addEventListener(
@@ -27,7 +26,7 @@ form.addEventListener(
   false,
 );
 
-// Main menu submenu
+// Submenu
 let menu__item = document.querySelectorAll('.hasSubMenu');
 
 Array.from(menu__item).forEach(el => {
@@ -39,3 +38,22 @@ Array.from(menu__item).forEach(el => {
     }
   });
 });
+
+// Mobile menu
+let mainHeader = document.querySelector('#headerMain'),
+  menuSwitcher = document.querySelector('#menuSwitcher'),
+  bodySelector = document.querySelector('body');
+
+let mobileMenu = () => {
+  if (menuSwitcher.checked) {
+    mainHeader.classList.add('fixedHeader');
+    bodySelector.classList.add('hasFixedHeader');
+  } else {
+    mainHeader.classList.remove('fixedHeader');
+    bodySelector.classList.remove('hasFixedHeader');
+  }
+};
+
+mobileMenu();
+
+menuSwitcher.addEventListener('change', mobileMenu, false);

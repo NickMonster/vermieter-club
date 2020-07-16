@@ -642,27 +642,6 @@ p {
 /* -------------------------------------------------------------------------------------
     5-Spaces
 --------------------------------------------------------------------------------------- */
-.p__t-28 {
-  padding-top: 28px;
-}
-
-.p__b-20 {
-  padding-bottom: 20px;
-}
-
-.p__l-15 {
-  padding-left: 15px;
-}
-
-.p__l-30 {
-  padding-left: 30px;
-}
-
-.p__x-30 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .m__t-0 {
   margin-top: 0;
 }
@@ -743,6 +722,10 @@ p {
   margin-right: 10px;
 }
 
+.m__r-15 {
+  margin-right: 15px;
+}
+
 .m__r-25 {
   margin-right: 25px;
 }
@@ -759,12 +742,69 @@ p {
   margin-left: 10px;
 }
 
+.m__l-15 {
+  margin-left: 15px;
+}
+
+.m__l-25 {
+  margin-left: 25px;
+}
+
 .m__l-26 {
   margin-left: 26px;
 }
 
 .m__l-30 {
   margin-left: 30px;
+}
+
+.p__t-28 {
+  padding-top: 28px;
+}
+
+.p__t-50 {
+  padding-top: 50px;
+}
+
+.p__b-20 {
+  padding-bottom: 20px;
+}
+
+.p__b-28 {
+  padding-bottom: 28px;
+}
+
+.p__l-15 {
+  padding-left: 15px;
+}
+
+.p__l-30 {
+  padding-left: 30px;
+}
+
+.p__x-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.p__x-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 576px) {
+  .m-sm__l-25 {
+    margin-left: 25px;
+  }
+
+  .m-sm__r-25 {
+    margin-right: 25px;
+  }
+
+  .p-sm__x-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -778,6 +818,10 @@ p {
 }
 
 @media (min-width: 992px) {
+  .border-lg__none {
+    border: none;
+  }
+
   .m-lg__t-0 {
     margin-top: 0;
   }
@@ -807,6 +851,10 @@ p {
     margin-right: 50px;
   }
 
+  .p-lg__t-0 {
+    padding-top: 0;
+  }
+
   .p-lg__l-50 {
     padding-left: 50px;
   }
@@ -829,6 +877,10 @@ label {
 .align-items-center {
   -ms-flex-align: center !important;
   align-items: center !important;
+}
+
+.border__top-15-white {
+  border-top: 15px solid white;
 }
 
 .circle__before {
@@ -932,6 +984,10 @@ label {
 }
 
 @media (min-width: 992px) {
+  .border-lg__none {
+    border: none;
+  }
+
   .d-lg-none {
     display: none !important;
   }
@@ -1081,6 +1137,20 @@ label {
   width: 40px;
 }
 
+.fixedHeader {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.hasFixedHeader {
+  overflow-y: hidden;
+}
+
 .header__main {
   background-color: var(--main-blue);
 }
@@ -1097,6 +1167,8 @@ label {
 .logo__mobile {
   position: relative;
   z-index: 3;
+  margin-top: -5px;
+  margin-bottom: 5px;
 }
 
 .login__icon-desktop img {
@@ -1147,7 +1219,16 @@ label {
     9-Main navigation
 --------------------------------------------------------------------------------------- */
 .main__nav input {
-  display: none;
+  display: block;
+  width: 67px;
+  height: 50px;
+  position: absolute;
+  top: 27px;
+  right: 4px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 4;
+  -webkit-touch-callout: none;
 }
 
 .main__nav-list {
@@ -1173,7 +1254,17 @@ label {
   display: block;
 }
 
+@media (min-width: 576px) {
+  .main__nav input {
+    right: 24px;
+  }
+}
+
 @media (min-width: 1200px) {
+  .main__nav input {
+    display: none;
+  }
+
   .main__nav-list li {
     display: inline-block;
     font-size: 20px;
@@ -1183,7 +1274,7 @@ label {
 
   .main__nav-list .selected + ul {
     position: absolute;
-    top: 56px;
+    top: 52px;
     left: -30px;
     display: inline-block;
     background-color: var(--dark-blue-bg);
@@ -1203,7 +1294,7 @@ label {
 
 @media (min-width: 1440px) {
   .main__nav-list .selected + ul {
-    top: 52px;
+    top: 48px;
   }
 }
 
@@ -1236,19 +1327,6 @@ label {
 
   .main__nav-list div.selected:after {
     transform: rotate(180deg);
-  }
-
-  .main__nav input {
-    display: block;
-    width: 67px;
-    height: 50px;
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 4;
-    -webkit-touch-callout: none;
   }
 
   .main__nav span {
@@ -1287,7 +1365,7 @@ label {
   }
 
   .main__nav-list {
-    position: fixed;
+    position: absolute;
     display: block;
     width: 100%;
     padding: 200px 58px 58px;
@@ -1311,6 +1389,12 @@ label {
 
   .main__nav-list li {
     margin: 0 0 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__nav-list div:after {
+    left: 85px;
   }
 }
 
@@ -1350,6 +1434,10 @@ label {
 
 .hasSubMenu.selected + ul {
   display: block;
+}
+
+.newsletter__form {
+  max-width: 600px;
 }
 
 @media (min-width: 992px) {
