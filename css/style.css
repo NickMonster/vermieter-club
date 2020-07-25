@@ -749,6 +749,12 @@ a {
     max-width: 16.666667%;
   }
 
+  .col-xl-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
   .col-xl-6 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
@@ -816,6 +822,10 @@ a {
 
 .m__t-50 {
   margin-top: 50px;
+}
+
+.m__t-67 {
+  margin-top: 67px;
 }
 
 .m__t-89 {
@@ -1415,6 +1425,7 @@ label {
     7-Buttons
 --------------------------------------------------------------------------------------- */
 .btn__orange,
+.btn__orange,
 .btn__blue,
 .btn__blue-2,
 .btn__white {
@@ -1425,6 +1436,8 @@ label {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
+  box-shadow: none;
+  border: none;
 }
 
 .btn__blue-2 {
@@ -1441,7 +1454,6 @@ label {
 .btn__blue-2 {
   background-color: var(--main-blue);
   color: var(--white);
-  border: none;
 }
 
 .btn__blue:focus {
