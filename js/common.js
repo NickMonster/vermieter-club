@@ -81,4 +81,6 @@ mobileMenu();
 mobileUserMenu();
 
 menuSwitcher.addEventListener('change', mobileMenu, false);
-userMenuSelector.addEventListener('change', mobileUserMenu, false);
+if (document.querySelector('#userMenuSelector')) {
+  userMenuSelector.addEventListener('change', mobileUserMenu, false);
+}
