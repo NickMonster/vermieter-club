@@ -42,10 +42,16 @@ Array.from(menu__item).forEach(el => {
 // Mobile menu
 let mainHeader = document.querySelector('#headerMain'),
   menuSwitcher = document.querySelector('#menuSwitcher'),
+  loggedIn = document.querySelector('#loggedIn'),
   bodySelector = document.querySelector('body');
 
 let mobileMenu = () => {
   if (menuSwitcher.checked) {
+    if (document.querySelector('#userMenuSelector')) {
+      loggedIn.classList.remove('selected');
+      let userMenuSelector = document.querySelector('#userMenuSelector');
+      userMenuSelector.checked = false;
+    }
     mainHeader.classList.add('fixedHeader');
     bodySelector.classList.add('hasFixedHeader');
   } else {
@@ -54,6 +60,25 @@ let mobileMenu = () => {
   }
 };
 
+let mobileUserMenu = () => {
+  if (document.querySelector('#userMenuSelector')) {
+    let userMenuSelector = document.querySelector('#userMenuSelector');
+
+    if (userMenuSelector.checked) {
+      loggedIn.classList.add('selected');
+      mainHeader.classList.add('fixedHeader');
+      bodySelector.classList.add('hasFixedHeader');
+    } else {
+      if (!menuSwitcher.checked) {
+        mainHeader.classList.remove('fixedHeader');
+        bodySelector.classList.remove('hasFixedHeader');
+      }
+    }
+  }
+};
+
 mobileMenu();
+mobileUserMenu();
 
 menuSwitcher.addEventListener('change', mobileMenu, false);
+userMenuSelector.addEventListener('change', mobileUserMenu, false);

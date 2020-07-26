@@ -19,16 +19,29 @@
                     </a>
 
                     <div class="d-flex align-items-center m__t-7 w-xl-100">
-                        <a href="#" class="order-2 d-none d-lg-flex align-items-center m__r-35 login__icon-desktop">
-                            <img src="img/login.svg" alt="" />
-                            <span class="m__l-10 d-none d-xll-inline-block">Antrag auf Mitgliedschaft</span>
-                        </a>
+                        <div class="order-2 d-flex align-items-center relative-xl">
+                            <a href="#" id="loggedIn" class="hasSubMenu logged__in">
+                                <input id="userMenuSelector" type="checkbox">
+                                <span class="font__size-20 d-none m__r-35">Ihre Mitgliedschaft</span>
+                                <img src="img/user.jpg" alt="" />
+                            </a>
+                            <ul>
+                                <li><a href="#">Ihr Account</a></li>
+                                <li><a href="#">Stammdaten</a></li>
+                                <li><a href="#">Passwort ändern</a></li>
+                                <li><a href="#">E-Mail ändern</a></li>
+                                <li><a href="#">Ihre Immobilien</a></li>
+                                <li><a href="#">Ihre Käufe</a></li>
+                                <li><a href="#">Ihre Rechnungen</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </div>
                         <a href="#" class="m__l-15 m__r-15 m-sm__l-25 m-sm__r-25 order-2 order-lg-4 search__icon">
                             <img src="img/search.svg" alt="" />
                         </a>
                         <a href="#"
-                            class="m__r-25 m-lg__r-0 order-2 order-lg-5 d-md-flex align-items-center btn__lg-primary-white login__icon">
-                            <span class="m__l-10 d-none d-lg-inline-block font__size-24">Zum Login</span>
+                            class="m__r-25 m-lg__r-0 order-2 order-lg-5 d-none d-xs-inline-block d-md-flex align-items-center btn__lg-primary-white logout__icon">
+                            <span class="m__l-15 d-none d-lg-inline-block font__size-24">Logout</span>
                         </a>
                         <a href="#" class="order-2 order-lg-3 relative cart__icon">
                             <img src="img/commerce-and-shopping.svg" alt="" />
