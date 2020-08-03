@@ -793,6 +793,12 @@ a {
     max-width: 50%;
   }
 
+  .col-lg-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
   .col-lg-8 {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
@@ -1058,6 +1064,10 @@ a {
   margin-bottom: 86px;
 }
 
+.m__b-93 {
+  margin-bottom: 93px;
+}
+
 .m__r-auto {
   margin-right: auto;
 }
@@ -1158,6 +1168,11 @@ a {
   padding-bottom: 0px;
 }
 
+.p__b-10,
+.custom__area-rounded.p__b-10 {
+  padding-bottom: 10px;
+}
+
 .p__b-20 {
   padding-bottom: 20px;
 }
@@ -1207,6 +1222,12 @@ a {
 .p__x-15 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.p__x-24,
+.custom__area-rounded.p__x-24 {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .p__x-30 {
@@ -1274,6 +1295,10 @@ a {
 
   .m-lg__t-94 {
     margin-top: 94px;
+  }
+
+  .m-lg__b-25 {
+    margin-bottom: 25px;
   }
 
   .m-lg__b-55,
@@ -1832,6 +1857,8 @@ label {
 .logged__in {
   margin: 0 0 0 15px;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .logged__in input {
@@ -2654,14 +2681,23 @@ label {
   background-size: 67px auto;
 }
 
+/*** Custom links ***/
 .upload__photo,
 .upload__photos,
-.upload__file {
+.upload__file,
+.download__file,
+.webinar__blue,
+.webinar__grey {
   padding: 6px 0 0 52px;
   display: inline-block;
   background-image: url('../img/camera.svg');
   background-repeat: no-repeat;
   min-height: 37px;
+}
+
+.download__file {
+  background-image: url('../img/download.svg');
+  padding-left: 39px;
 }
 
 .upload__photos {
@@ -2672,6 +2708,14 @@ label {
   background-image: url('../img/upload.svg');
   background-size: 27px auto;
   padding-left: 35px;
+}
+
+.webinar__blue {
+  background-image: url('../img/webinar.svg');
+}
+
+.webinar__grey {
+  background-image: url('../img/webinar-grey.svg');
 }
 
 /*** Other ***/
@@ -2707,6 +2751,7 @@ label {
 @media (min-width: 768px) {
   .title__custom {
     padding: 0 0 0 60px;
+    margin-left: -63px;
   }
 
   .title__custom:before {
@@ -2717,9 +2762,17 @@ label {
   }
 }
 
-@media (min-width: 768px) {
-  .title__custom {
-    margin-left: -63px;
+@media (min-width: 992px) {
+  .webinar__blue,
+  .webinar__grey,
+  .download__file {
+    text-align: center;
+    background-position: center top;
+    padding: 50px 0 0;
+  }
+
+  .download__file {
+    padding: 35px 0 0;
   }
 }
 
