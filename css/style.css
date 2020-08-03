@@ -651,6 +651,10 @@ a {
   margin-left: -15px;
 }
 
+.offset-3 {
+  margin-left: 25%;
+}
+
 .offset-4 {
   margin-left: 33.333333%;
 }
@@ -1194,9 +1198,10 @@ a {
   padding-left: 30px;
 }
 
-.p__x-45 {
-  padding-left: 45px;
-  padding-right: 45px;
+.p__x-11,
+.p__x-11.btn__orange {
+  padding-left: 11px;
+  padding-right: 11px;
 }
 
 .p__x-15 {
@@ -1207,6 +1212,17 @@ a {
 .p__x-30 {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+.p__x-45 {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.p__y-15,
+.btn__grey.p__y-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 @media (min-width: 576px) {
@@ -2663,6 +2679,10 @@ label {
   border: 4px solid var(--main-blue);
   border-radius: 10px;
   padding: 20px 10px;
+}
+
+.custom__buttons-2 a {
+  max-width: 215px;
 }
 
 .title__custom {
