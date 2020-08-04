@@ -2687,12 +2687,19 @@ label {
 .upload__file,
 .download__file,
 .webinar__blue,
-.webinar__grey {
+.webinar__grey,
+.document__icon {
   padding: 6px 0 0 52px;
   display: inline-block;
   background-image: url('../img/camera.svg');
   background-repeat: no-repeat;
   min-height: 37px;
+}
+
+.document__icon {
+  background-image: url('../img/dokument.png');
+  background-size: 30px auto;
+  padding-left: 40px;
 }
 
 .download__file {
@@ -2711,11 +2718,13 @@ label {
 }
 
 .webinar__blue {
-  background-image: url('../img/webinar.svg');
+  background-image: url('../img/webinar.png');
+  background-size: 45px auto;
 }
 
 .webinar__grey {
-  background-image: url('../img/webinar-grey.svg');
+  background-image: url('../img/webinar-grey.png');
+  background-size: 45px auto;
 }
 
 /*** Other ***/
@@ -2765,7 +2774,8 @@ label {
 @media (min-width: 992px) {
   .webinar__blue,
   .webinar__grey,
-  .download__file {
+  .download__file,
+  .document__icon {
     text-align: center;
     background-position: center top;
     padding: 50px 0 0;
@@ -2773,6 +2783,10 @@ label {
 
   .download__file {
     padding: 35px 0 0;
+  }
+
+  .document__icon {
+    padding: 40px 0 0;
   }
 }
 
