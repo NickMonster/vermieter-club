@@ -675,6 +675,12 @@ a {
     max-width: none;
   }
 
+  .col-sm-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
   .col-sm-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
@@ -1209,8 +1215,16 @@ a {
   padding-left: 15px;
 }
 
+.p__l-18 {
+  padding-left: 18px;
+}
+
 .p__l-30 {
   padding-left: 30px;
+}
+
+.p__l-42 {
+  padding-left: 42px;
 }
 
 .p__x-11,
