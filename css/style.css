@@ -2702,7 +2702,8 @@ label {
 .download__file,
 .webinar__blue,
 .webinar__grey,
-.document__icon {
+.document__icon,
+.zoom__in {
   padding: 6px 0 0 52px;
   display: inline-block;
   background-image: url('../img/camera.svg');
@@ -2739,6 +2740,11 @@ label {
 .webinar__grey {
   background-image: url('../img/webinar-grey.png');
   background-size: 45px auto;
+}
+
+.zoom__in {
+  background-image: url('../img/zoom-in.svg');
+  padding: 3px 0 0 44px;
 }
 
 /*** Other ***/
