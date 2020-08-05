@@ -2758,6 +2758,32 @@ label {
   max-width: 215px;
 }
 
+.close__item:after {
+  transform: rotate(-180deg);
+}
+
+.close__item:after,
+.open__item:after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.7 40.53'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='2.87 2.83 33.87 34.83 65.87 2.83' style='fill:none;stroke:%230D4EFE;stroke-miterlimit:10;stroke-width:8px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.show__hide-selector {
+  padding-right: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+.show__hide-selector:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 11px;
+  background-repeat: no-repeat;
+  right: 0;
+  position: absolute;
+  top: 5px;
+}
+
 .title__custom {
   position: relative;
   padding: 0 0 0 79px;

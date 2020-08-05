@@ -84,3 +84,20 @@ menuSwitcher.addEventListener('change', mobileMenu, false);
 if (document.querySelector('#userMenuSelector')) {
   userMenuSelector.addEventListener('change', mobileUserMenu, false);
 }
+
+// Open / close item
+let selector__items = document.querySelectorAll('.show__hide-selector');
+
+Array.from(selector__items).forEach(el2 => {
+  el2.addEventListener('click', () => {
+    if (el2.classList.contains('close__item')) {
+      el2.classList.remove('close__item');
+      el2.classList.add('open__item');
+      el2.nextSibling.nextSibling.classList.toggle('d-none');
+    } else {
+      el2.classList.remove('open__item');
+      el2.classList.add('close__item');
+      el2.nextSibling.nextSibling.classList.toggle('d-none');
+    }
+  });
+});
