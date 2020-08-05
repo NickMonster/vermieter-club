@@ -2703,12 +2703,18 @@ label {
 .webinar__blue,
 .webinar__grey,
 .document__icon,
-.zoom__in {
+.zoom__in,
+.document__file {
   padding: 6px 0 0 52px;
   display: inline-block;
   background-image: url('../img/camera.svg');
   background-repeat: no-repeat;
   min-height: 37px;
+}
+
+.document__file {
+  background-image: url('../img/document.svg');
+  padding: 4px 0 0 30px;
 }
 
 .document__icon {
@@ -2748,6 +2754,24 @@ label {
 }
 
 /*** Other ***/
+.arrow__down-grey {
+  position: relative;
+  display: inline-block;
+  padding-left: 34px;
+}
+
+.arrow__down-grey:before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 14px;
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.7 40.53'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='2.87 2.83 33.87 34.83 65.87 2.83' style='fill:none;stroke:%23707070;stroke-miterlimit:10;stroke-width:8px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  left: 0;
+  top: 4px;
+}
+
 .custom__area-rounded {
   border: 4px solid var(--main-blue);
   border-radius: 10px;
