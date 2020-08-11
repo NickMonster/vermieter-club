@@ -81,10 +81,10 @@
         </div>
     </header>
 
-    <main class="m__t-24 m-lg__t-94 m__b-72">
+    <main class="m__t-37 m-lg__t-94 m__b-72">
         <div class="container">
             <div class="row">
-                <div class="d-none d-lg-block col-lg-3 col-xl-2 offset-xl-1">
+                <div class="d-none d-lg-block col-lg-3">
                     <ul class="font__size-22 font__semibold">
                         <li class="m__b-30 color__grey-light"><a href="#"
                                 class="text__decoration-none color__grey-light">Ihr Account</a></li>
@@ -222,17 +222,31 @@
                                             </div>
                                             <div class="d-none d-lg-block col-lg-4 text-center">
                                                 <p class="font__semibold">Beispielgrafik</p>
-                                                <a href="#" class=" text__decoration-none">
+                                                <a href="#popup1" class=" text__decoration-none">
                                                     <img src="img/bild-11/bild-11.png" alt="">
                                                     <p><span class="font__size-16 m__t-24 zoom__in">Grafik
                                                             vergrößern</span></p>
                                                 </a>
+                                                <div id="popup1" class="overlay d-flex align-items-center">
+                                                    <div class="container">
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-auto popup">
+                                                                <img src="img/bild-11/Gundbuchauszug.png" alt="" />
+                                                                <a class="close" href="#">&times;</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="m__t-71 text-right">
-                                            <button class="btn__clear">Abbrechen</button>
-                                            <button class="btn__blue">Speichern</button>
+                                        <div class="row m__t-71 justify-content-sm-between text-center">
+                                            <div class="col-sm-auto m__b-20">
+                                                <button class="btn__clear">Abbrechen</button>
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <button class="btn__blue">Speichern</button>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>
