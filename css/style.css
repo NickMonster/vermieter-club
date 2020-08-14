@@ -1233,6 +1233,10 @@ main .container {
   padding: 15px;
 }
 
+.p__t-15 {
+  padding-top: 15px;
+}
+
 .p__t-20 {
   padding-top: 20px;
 }
@@ -1324,14 +1328,21 @@ main .container {
 }
 
 .p__x-11,
-.p__x-11.btn__orange {
+.p__x-11.btn__orange,
+.p__x-11.btn__grey {
   padding-left: 11px;
   padding-right: 11px;
 }
 
-.p__x-15 {
+.p__x-15,
+.custom__area-rounded.p__x-15 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.p__x-20 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .p__x-24,
@@ -1461,6 +1472,10 @@ main .container {
     margin-top: 94px;
   }
 
+  .m-lg__b-0 {
+    margin-bottom: 0;
+  }
+
   .m-lg__b-16 {
     margin-bottom: 16px;
   }
@@ -1520,6 +1535,11 @@ main .container {
 
   .p-lg__t-0 {
     padding-top: 0;
+  }
+
+  .p-lg__t-10,
+  .custom__area-rounded.p-lg__t-10 {
+    padding-top: 10px;
   }
 
   .p-lg__b-5 {
@@ -2029,7 +2049,6 @@ label {
 
 .btn__grey {
   font-size: 20px;
-  padding: 8px 18px 9px;
   color: var(--text-blue);
   background-color: var(--grey-bg);
 }
@@ -2092,7 +2111,7 @@ label {
     border-radius: 10px;
     background-color: var(--white);
     color: var(--main-blue);
-    padding: 15px 20px 15px;
+    padding: 13px 20px 13px;
   }
 
   .header__main a.btn__lg-primary-white svg {
@@ -2269,9 +2288,9 @@ label {
   }
 
   .login__icon::before {
-    width: 27px;
-    height: 34px;
-    background-size: 27px auto;
+    width: 25px;
+    height: 30px;
+    background-size: 25px auto;
   }
 
   .login__icon-desktop {
@@ -2310,32 +2329,6 @@ label {
 
   .logged__in img {
     width: 50px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .cart__icon {
-    width: 34px;
-    background-size: 34px auto;
-    height: 40px;
-  }
-
-  .login__icon-desktop {
-    height: 38px;
-    background-size: 32px auto;
-    padding-left: 32px;
-  }
-
-  .login__icon:before {
-    background-size: 24px auto;
-    width: 24px;
-    height: 30px;
-  }
-
-  .search__icon {
-    width: 33px;
-    background-size: 33px auto;
-    height: 40px;
   }
 }
 
@@ -2475,7 +2468,7 @@ label {
 
   .hasSubMenu.selected + ul {
     position: absolute;
-    top: 33px;
+    top: 29px;
     left: -26px;
     display: inline-block;
     background-color: var(--dark-blue-bg);
@@ -2494,13 +2487,8 @@ label {
   }
 
   .logged__in.hasSubMenu.selected + ul {
-    top: 85px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .hasSubMenu.selected + ul {
-    top: 48px;
+    top: 74px;
+    left: -52px;
   }
 }
 
@@ -3423,6 +3411,12 @@ label {
     text-align: center;
     background-position: center top;
     padding: 50px 0 0;
+  }
+
+  .document__file {
+    background-size: 20px auto;
+    padding: 3px 0 0 30px;
+    min-height: 26px;
   }
 
   .download__file {
