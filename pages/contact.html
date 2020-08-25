@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vermieter Club</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <body class="relative">
@@ -73,39 +73,106 @@
     <main class="m__t-37 m-lg__t-80 m__b-72 m-lg__b-60 ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 offset-lg-2 m__b-30 m-md__b-0">
-                    <div class="font__size-16 font__size-md-18 m__b-10 color__grey font__bold">
-                        Vermieterclub / Antrag auf Mitgliedschaft
+                <div class="col-lg-8 offset-lg-1 offset-xl-2">
+                    <div class="row">
+                        <div class="col m__b-30 m-lg__b-25">
+                            <div class="font__size-16 font__size-md-18 m__b-10 color__grey font__bold">
+                                Vermieterclub / Kontakt
+                            </div>
+                            <h1 class="m__b-10">
+                                Kontakt
+                            </h1>
+                            <p class="font__size-24 font__size-lg-19 color__blue-dark">Wir unterstützen Sie als
+                                Vermieter
+                                und Eigentümer
+                                mit
+                                einer Vielzahl an
+                                Leistungen. Sollten Sie
+                                eine spezifische Anfrage
+                                haben, nutzen Sie bitte das Kontaktformular.</p>
+                        </div>
                     </div>
-                    <h1 class="d-md-none">
-                        Ihr Antrag auf Mitgliedschaft im Vermieterclub e.V.
-                    </h1>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-7 offset-lg-2">
-                    <h2 class="font__size-26 font__size-md-36 color__blue m__b-40 m-md__b-32 title__custom">Bitte
-                        bestätigen Sie
-                        Ihre
-                        E-Mail Adresse</h2>
-                    <p class="font__size-18 color__grey w-70 m__l-25 m__b-60 m-md__b-32 m-xl__l-0">Wir
-                        haben
-                        Ihnen
-                        eine
-                        E-Mail an
-                        die von Ihnen
-                        angegebene
-                        E-Mail
-                        Adresse
-                        gesendet.
-                        Bitte prüfen Sie Ihr
-                        Postfach und bestätigen Sie den in der E-Mail enthaltenen Link. Nach der Bestätigung gelangen
-                        Sie zu
-                        dem
-                        nächsten Schritt ihres Mitgliedschaftsantrags.</p>
+                    <div class="row font__size-24 font__size-lg-19 color__blue-dark m__b-30 m-lg__b-25">
+                        <div class="col-auto col-lg-2">
+                            <p class="m__b-5">Telefon</p>
+                            <p class="font__size-18 font__size-lg-15">0123/ 45678900</p>
+                        </div>
 
-                    <div class="btn__white-big m__x-30 m-xl-0">Bitte prüfen Sie Ihren Posteingang</div>
+                        <div class="col-auto">
+                            <p class="m__b-5">E-Mail</p>
+                            <p class="font__size-18 font__size-lg-15">info@vermieterclub.de</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-10">
+                            <form>
+                                <h3 class="font__size-26 font__size-lg-20 color__grey m__b-25 m-lg__b-20">Ihre Anfrage
+                                </h3>
+                                <div class="row">
+                                    <div class="col-md-8 order-md-2">
+                                        <label class="w-100">
+                                            <div class="font__size-15 color__grey m__b-5 font__bold">E-Mail</div>
+                                            <input type="email" class="input__text" />
+                                        </label>
+                                    </div>
+                                    <div class="col-8 col-md-4 order-md-1">
+                                        <label class="w-100">
+                                            <div class="font__size-15 color__grey m__b-5 font__bold">Anrede</div>
+                                            <select name="salutation" class="select__custom">
+                                                <option>Apples</option>
+                                                <option>Bananas</option>
+                                                <option>Grapes</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="w-100">
+                                            <div class="font__size-15 color__grey m__b-5 font__bold">Vorname</div>
+                                            <input type="text" class="input__text" />
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="w-100">
+                                            <div class="font__size-15 color__grey m__b-5 font__bold">Nachname</div>
+                                            <input type="text" class="input__text" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="w-100">
+                                            <div class="font__size-15 color__grey m__b-5 font__bold">Telefonnummer
+                                                (optional)
+                                            </div>
+                                            <input type="tel" class="input__text" />
+                                        </label>
+                                    </div>
+                                </div>
+                                <label class="w-100">
+                                    <div class="font__size-15 color__grey m__b-5 font__bold">Betreff</div>
+                                    <input type="text" class="input__text" />
+                                </label>
+                                <label class="w-100 m__b-25">
+                                    <div class="font__size-15 color__grey m__b-5 font__bold">Anliegen</div>
+                                    <textarea placeholder="Ihr Anliegen…" class="textarea__custom"></textarea>
+                                </label>
+                                <div>
+                                    <input id="termsAccept" class="checkbox__custom" type="checkbox" />
+                                    <label for="termsAccept">Ich habe die Hinweise zur <a href="#">Datenverarbeitung</a>
+                                        zur
+                                        Kenntnis
+                                        genommen.*</label>
+                                </div>
+                                <div class="text-right">
+                                    <button class="btn__blue-2">Jetzt abschicken</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -175,7 +242,7 @@
         </div>
     </footer>
 
-    <script src="js/common.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 
 </html>

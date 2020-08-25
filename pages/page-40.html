@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vermieter Club</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 
 <body class="relative">
@@ -122,7 +122,7 @@
                         </div>
                     </div>
                     <form data-component="forms.register" autocomplete="off">
-                        <div class="row m__b-54 m-lg__b-44">
+                        <div class="row m__b-54">
                             <div class="col-md-4 m__b-30">
                                 <div class="plan__item">
                                     <h3>
@@ -180,22 +180,25 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="font__size-24 font__size-lg-19 color__blue-dark m__b-54 m-lg__b-44">Wir unterstützen
-                            Sie als
-                            Vermieter und
-                            Eigentümer mit
-                            einer Vielzahl an Leistungen. Gerne beraten wir Sie persönlich zu den Vorteilen Ihres
-                            individuellen Plans.</p>
                         <div class="row">
                             <div class="col">
-                                <div class="font__bold font__size-20 font__size-md-18 color__grey m__b-22 m-lg__b-18">
-                                    Ihre Anfrage
+                                <div class="font__bold font__size-20 font__size-md-18 color__grey m__b-22">
+                                    Zahlungsdaten
                                 </div>
+                                <label class="w-100">
+                                    <div class="font__size-15 color__grey m__b-5 font__bold">
+                                        Kredit-/Debitkartennummer
+                                    </div>
+                                    <input type="text" class="input__text" />
+                                </label>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <label class="w-100 m__t-20">
+                                        <label class="w-100">
+                                            <div class="font__size-15 color__grey m__b-5 font__bold">
+                                                Ablaufmonat
+                                            </div>
                                             <select class="select__custom">
-                                                <option>Individueller Mitgliedschaftsantrag</option>
+                                                <option>Apples</option>
                                                 <option>Bananas</option>
                                                 <option>Grapes</option>
                                             </select>
@@ -204,20 +207,10 @@
                                     <div class="col-md-6">
                                         <label class="w-100">
                                             <div class="font__size-15 color__grey m__b-5 font__bold">
-                                                E-Mail
-                                            </div>
-                                            <input type="email" class="input__text" />
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-7 col-md-6">
-                                        <label class="w-100">
-                                            <div class="font__size-15 color__grey m__b-5 font__bold">
-                                                Anrede
+                                                Ablaufjahr
                                             </div>
                                             <select class="select__custom">
-                                                <option>Apple</option>
+                                                <option>Apples</option>
                                                 <option>Bananas</option>
                                                 <option>Grapes</option>
                                             </select>
@@ -242,34 +235,18 @@
                                         </label>
                                     </div>
                                 </div>
-
-                                <label class="w-100">
-                                    <div class="font__size-15 color__grey m__b-5 font__bold">
-                                        Telefonnummer (optional)
+                                <div class="row">
+                                    <div class="col-5 col-lg-4 col-xl-3">
+                                        <label class="w-100">
+                                            <div class="font__size-15 color__grey m__b-5 font__bold">
+                                                CVC
+                                            </div>
+                                            <input type="text" class="input__text" />
+                                        </label>
                                     </div>
-                                    <input type="text" class="input__text" />
-                                </label>
-
-                                <label class="w-100">
-                                    <div class="font__size-15 color__grey m__b-5 font__bold">
-                                        Betreff
-                                    </div>
-                                    <input type="text" placeholder="Individuelle Anfrage" class="input__text" />
-                                </label>
-
-                                <textarea placeholder="Anfrage zur individuellen Mitgliedschaft."
-                                    class="textarea__custom"></textarea>
-
-                                <div class="m__t-24">
-                                    <input id="termsAccept" class="checkbox__custom" type="checkbox">
-                                    <label for="termsAccept">Ich habe die Hinweise zur <a href="#">Datenverarbeitung</a>
-                                        zur
-                                        Kenntnis
-                                        genommen.*</label>
                                 </div>
-
-                                <div class="text-right">
-                                    <button class="btn__blue-2">Jetzt abschicken</button>
+                                <div class="text-right m__t-67 m-lg__t-40">
+                                    <button href="#" class="btn__orange">Kostenpflichtig Mitglied werden</button>
                                 </div>
                             </div>
                         </div>
@@ -343,7 +320,7 @@
         </div>
     </footer>
 
-    <script src="js/common.js"></script>
+    <script src="../js/common.js"></script>
 </body>
 
 </html>

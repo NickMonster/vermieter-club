@@ -655,7 +655,10 @@ a {
 .col-xl-7,
 .col-xl-8,
 .col-xl-9,
-.col-xl-auto {
+.col-xl-auto,
+.col-xll-3,
+.col-xll-9,
+.col-xll-10 {
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -910,6 +913,12 @@ main .container {
     max-width: 66.666667%;
   }
 
+  .col-lg-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
   .col-lg-10 {
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
@@ -959,6 +968,12 @@ main .container {
     max-width: 25%;
   }
 
+  .col-xl-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
   .col-xl-5 {
     -ms-flex: 0 0 41.666667%;
     flex: 0 0 41.666667%;
@@ -982,6 +997,12 @@ main .container {
     -ms-flex: 0 0 66.666667%;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
+  }
+
+  .col-xl-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
   }
 
   .col-xl-10 {
@@ -1008,6 +1029,28 @@ main .container {
 @media (min-width: 1400px) {
   .container {
     max-width: 1340px;
+  }
+
+  .col-xll-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-xll-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-xll-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  .offset-xll-2 {
+    margin-left: 16.666667%;
   }
 }
 
@@ -1248,6 +1291,11 @@ main .container {
   margin-left: -25px;
 }
 
+.m__x-15 {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 .m__x-30 {
   margin-right: 30px;
   margin-left: 30px;
@@ -1449,6 +1497,14 @@ main .container {
     margin-bottom: 40px;
   }
 
+  .m-md__l-0 {
+    margin-left: 0;
+  }
+
+  .m-md__r-15 {
+    margin-right: 15px;
+  }
+
   .p-md__x-30 {
     padding-left: 30px;
     padding-right: 30px;
@@ -1460,6 +1516,10 @@ main .container {
 
   .p-md__b-32 {
     padding-bottom: 32px;
+  }
+
+  .p-md__r-0 {
+    padding-right: 0;
   }
 }
 
@@ -1610,8 +1670,16 @@ main .container {
     margin-left: 0;
   }
 
+  .m-xl__r-0 {
+    margin-right: 0;
+  }
+
   .m-xl__t--125 {
     margin-top: -125px;
+  }
+
+  .p-xl__r-0 {
+    padding-right: 0;
   }
 }
 
