@@ -446,6 +446,10 @@ a {
   font-size: 46px;
 }
 
+.font__size-53 {
+  font-size: 46px;
+}
+
 .lh-1 {
   line-height: 1;
 }
@@ -568,7 +572,7 @@ a {
 
   h1 {
     font-size: 40px;
-    line-height: 60px;
+    line-height: 45px;
   }
 }
 
@@ -1787,6 +1791,10 @@ label {
 
 .border__top-3-blue-grey {
   border-top: 3px dashed var(--blue-grey);
+}
+
+.border__bottom-130-blue {
+  border-bottom: 130px solid var(--main-blue);
 }
 
 .border__bottom-3-blue-grey {
@@ -3551,7 +3559,7 @@ label {
     height: 96px;
     position: absolute;
     left: -80px;
-    top: 17px;
+    top: 10px;
     background-image: url('../img/dokument.png');
     background-repeat: no-repeat;
     background-size: 60px auto;
@@ -3955,11 +3963,16 @@ label {
   font-size: 16px;
 }
 
-.input__text.input__search {
+.input__text.input__search,
+.input__text.input__home {
   background-image: url('../img/shop/search-3.svg');
   background-repeat: no-repeat;
   padding-left: 40px;
   background-position: 10px center;
+}
+
+.input__text.input__home {
+  background-image: url('../img/shop/home.svg');
 }
 
 .hidden-radio {
