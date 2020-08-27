@@ -129,8 +129,17 @@
 
                                 <div class="row">
                                     <div class="col-xl-10">
-                                        <form class="text-right m__b-25">
-                                            Anzah l
+                                        <div class="text-right m__b-25">
+                                            <div class="text-left color__grey font__bold m__b-30 custom__number-area">
+                                                Anzahl
+                                                <input type="number" min="1" value="1" class="custom__input-number">
+                                                <button
+                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                                    class="plus"></button>
+                                                <button
+                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                                    class="minus"></button>
+                                            </div>
 
                                             <label class="w-100">
                                                 <div class="text-left font__size-15 color__grey m__b-5 font__bold">
@@ -141,7 +150,7 @@
                                                     class="input__text input__home m__b-40">
                                             </label>
                                             <button class="btn__blue-2">In den Warenkorb</button>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
 

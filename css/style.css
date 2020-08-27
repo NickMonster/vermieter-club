@@ -3858,6 +3858,61 @@ label {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38.3 36.64'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='1.6 20.31 20.6 32.31 35.6 1.31' style='fill:none;stroke:%230d4efe;stroke-miterlimit:10;stroke-width:6px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
+.custom__number-area {
+  position: relative;
+}
+
+.custom__number-area button {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  width: 16px;
+  height: 9px;
+  background-repeat: no-repeat;
+  background-size: 15px auto;
+  position: absolute;
+  background-image: url('../img/shop/arrow-top.png');
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.custom__number-area button.plus {
+  top: -5px;
+  margin-left: -1px;
+}
+
+.custom__number-area button.minus {
+  transform: rotate(-180deg);
+  bottom: -5px;
+}
+
+.custom__input-number {
+  font-family: var(--bold-font);
+  color: var(--grey-text);
+  padding: 0 10px;
+  border: none;
+  width: 50px;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.custom__input-number::-webkit-inner-spin-button,
+.custom__input-number::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.custom__input-number:focus {
+  outline: none;
+}
+
 .file__custom {
   width: 0.1px;
   height: 0.1px;
