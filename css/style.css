@@ -3550,7 +3550,7 @@ label {
   padding: 3px 0 0 44px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .document__icon-3 {
     position: relative;
   }
