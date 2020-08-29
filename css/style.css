@@ -35,6 +35,7 @@
   --grey-text-4: #838383;
   --grey-border: #bebebe;
   --grey-bg: #e5e5e5;
+  --grey-bg-2: #bfbfbf;
   --green-main: #2fb26b;
   --green-text: #518d00;
   --red-main: #f00;
@@ -444,6 +445,10 @@ a {
 
 .font__size-40 {
   font-size: 40px;
+}
+
+.font__size-42 {
+  font-size: 42px;
 }
 
 .font__size-46 {
@@ -1824,6 +1829,10 @@ label {
 
 .bg__blue-dark {
   background-color: var(--dark-blue-bg-2);
+}
+
+.bg__grey {
+  background-color: var(--grey-bg-2);
 }
 
 .bg__orange {
@@ -3707,6 +3716,12 @@ label {
   background-repeat: no-repeat;
   background-position: 20px 30px;
   background-size: 92px auto;
+}
+
+.custom__element-6 {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
 }
 
 /*** Other ***/
