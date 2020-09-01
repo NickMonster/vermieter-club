@@ -463,7 +463,8 @@ a {
   line-height: 1;
 }
 
-.lh-1-1 {
+.lh-1-1,
+.checkbox__custom + label.lh-1-1 {
   line-height: 1.1;
 }
 
@@ -576,6 +577,10 @@ a {
   .font__size-lg-30,
   .plan__price.font__size-lg-30 {
     font-size: 30px;
+  }
+
+  .font__size-lg-34 {
+    font-size: 34px;
   }
 
   .font__lg-bold {
@@ -829,6 +834,12 @@ main .container {
     max-width: none;
   }
 
+  .col-sm-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
   .col-sm-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
@@ -860,6 +871,12 @@ main .container {
     max-width: 66.666667%;
   }
 
+  .col-sm-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
   .offset-sm-2 {
     margin-left: 16.666667%;
   }
@@ -871,6 +888,12 @@ main .container {
     flex: 0 0 auto;
     width: auto;
     max-width: none;
+  }
+
+  .col-md-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
   }
 
   .col-md-3 {
@@ -1320,6 +1343,10 @@ main .container {
 
 .m__b-93 {
   margin-bottom: 93px;
+}
+
+.m__b-100 {
+  margin-bottom: 100px;
 }
 
 .m__b-170 {
@@ -1871,6 +1898,10 @@ label {
   border-bottom: 3px dashed var(--blue-grey);
 }
 
+.border__bottom-3-white {
+  border-bottom: 3px solid white;
+}
+
 .border__top-15-white {
   border-top: 15px solid white;
 }
@@ -2131,6 +2162,10 @@ label {
 
   .border-radius-lg-10 {
     border-radius: 10px;
+  }
+
+  .border__radius-lg-18 {
+    border-radius: 18px;
   }
 
   .circle__before {
