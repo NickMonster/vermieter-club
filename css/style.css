@@ -2077,6 +2077,11 @@ label {
   white-space: nowrap !important;
 }
 
+.text-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
 .w-70 {
   width: 70%;
 }
@@ -3981,6 +3986,7 @@ label {
     12-Forms
 --------------------------------------------------------------------------------------- */
 .checkbox__custom,
+.checkbox__custom-3,
 .radio__custom {
   position: absolute;
   opacity: 0;
@@ -4026,6 +4032,23 @@ label {
   height: 18px;
   background-repeat: no-repeat;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38.3 36.64'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='1.6 20.31 20.6 32.31 35.6 1.31' style='fill:none;stroke:%230d4efe;stroke-miterlimit:10;stroke-width:6px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.checkbox__custom-3 + label {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid var(--grey-text-3);
+  padding: 6px 20px 8px;
+  font-size: 18px;
+  color: var(--grey-text-3);
+  border-radius: 7px;
+  margin-bottom: 0;
+}
+
+.checkbox__custom-3:checked + label {
+  color: var(--white);
+  background-color: var(--main-blue);
 }
 
 .custom__number-area {
