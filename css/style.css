@@ -397,6 +397,10 @@ a {
   font-size: 16px;
 }
 
+.font__size-17 {
+  font-size: 17px;
+}
+
 .font__size-18,
 .btn__blue-3.font__size-18 {
   font-size: 18px;
@@ -482,6 +486,12 @@ a {
 
 .text__decoration-none {
   text-decoration: none;
+}
+
+@media (min-width: 576px) {
+  .font__size-sm-40 {
+    font-size: 40px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -581,6 +591,10 @@ a {
 
   .font__size-lg-34 {
     font-size: 34px;
+  }
+
+  .font__size-lg-40 {
+    font-size: 40px;
   }
 
   .font__lg-bold {
@@ -1405,6 +1419,11 @@ main .container {
   margin-left: 85px;
 }
 
+.m__x-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .m__x--15 {
   margin-right: -15px;
   margin-left: -15px;
@@ -1602,6 +1621,11 @@ main .container {
 }
 
 @media (min-width: 576px) {
+  .m-sm__x-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .m-sm__l-25 {
     margin-left: 25px;
   }
@@ -2004,7 +2028,7 @@ label {
 }
 
 .link__arrow-right-2 {
-  padding-right: 25px;
+  padding-right: 40px;
 }
 
 .link__arrow-right-2:after {
@@ -2012,7 +2036,7 @@ label {
   width: 22px;
   height: 12px;
   background-size: 22px 12px;
-  right: 0px;
+  right: 10px;
   top: 5px;
 }
 
@@ -3702,6 +3726,19 @@ label {
   min-height: 37px;
 }
 
+.article__icon,
+.checkbox__custom-3 + label.article__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%236c6c6c;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-2)'%3E%3Cpath class='a' d='M19.5,24H4.5A2.5,2.5,0,0,1,2,21.5V2.5A2.5,2.5,0,0,1,4.5,0h15A2.5,2.5,0,0,1,22,2.5v19A2.5,2.5,0,0,1,19.5,24ZM4.5,1A1.5,1.5,0,0,0,3,2.5v19A1.5,1.5,0,0,0,4.5,23h15A1.5,1.5,0,0,0,21,21.5V2.5A1.5,1.5,0,0,0,19.5,1Z'/%3E%3Cpath class='a' d='M11.5,10a.5.5,0,0,1-.5-.5V9H6v.5a.5.5,0,0,1-1,0v-1A.5.5,0,0,1,5.5,8h6a.5.5,0,0,1,.5.5v1A.5.5,0,0,1,11.5,10Z'/%3E%3Cpath class='a' d='M8.5,15a.5.5,0,0,1-.5-.5v-6a.5.5,0,0,1,1,0v6A.5.5,0,0,1,8.5,15Z'/%3E%3Cpath class='a' d='M9.5,15h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,9h-4a.5.5,0,0,1,0-1h4a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,12h-4a.5.5,0,0,1,0-1h4a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,15h-4a.5.5,0,0,1,0-1h4a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,18H5.5a.5.5,0,0,1,0-1h13a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,21H5.5a.5.5,0,0,1,0-1h13a.5.5,0,0,1,0,1Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 40px;
+  background-size: 18px auto;
+}
+
+.checkbox__custom-3:checked + label.article__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='24' viewBox='0 0 20 24'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-2)'%3E%3Cpath class='a' d='M19.5,24H4.5A2.5,2.5,0,0,1,2,21.5V2.5A2.5,2.5,0,0,1,4.5,0h15A2.5,2.5,0,0,1,22,2.5v19A2.5,2.5,0,0,1,19.5,24ZM4.5,1A1.5,1.5,0,0,0,3,2.5v19A1.5,1.5,0,0,0,4.5,23h15A1.5,1.5,0,0,0,21,21.5V2.5A1.5,1.5,0,0,0,19.5,1Z'/%3E%3Cpath class='a' d='M11.5,10a.5.5,0,0,1-.5-.5V9H6v.5a.5.5,0,0,1-1,0v-1A.5.5,0,0,1,5.5,8h6a.5.5,0,0,1,.5.5v1A.5.5,0,0,1,11.5,10Z'/%3E%3Cpath class='a' d='M8.5,15a.5.5,0,0,1-.5-.5v-6a.5.5,0,0,1,1,0v6A.5.5,0,0,1,8.5,15Z'/%3E%3Cpath class='a' d='M9.5,15h-2a.5.5,0,0,1,0-1h2a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,9h-4a.5.5,0,0,1,0-1h4a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,12h-4a.5.5,0,0,1,0-1h4a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,15h-4a.5.5,0,0,1,0-1h4a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,18H5.5a.5.5,0,0,1,0-1h13a.5.5,0,0,1,0,1Z'/%3E%3Cpath class='a' d='M18.5,21H5.5a.5.5,0,0,1,0-1h13a.5.5,0,0,1,0,1Z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
 .calendar__icon {
   background-image: url('../img/shop/calendar-icon.png');
   background-repeat: no-repeat;
@@ -3763,6 +3800,19 @@ label {
   background-image: url('../img/upload.svg');
   background-size: 27px auto;
   padding-left: 35px;
+}
+
+.video__icon,
+.checkbox__custom-3 + label.video__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28.969' height='22.066' viewBox='0 0 28.969 22.066'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%236c6c6c;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(0 -61)'%3E%3Cpath class='a' d='M204.087,170.372l-6.79-4.243a.849.849,0,0,0-1.3.72v8.487a.849.849,0,0,0,1.3.72l6.79-4.243a.849.849,0,0,0,0-1.439ZM197.7,173.8V168.38l4.34,2.712Z' transform='translate(-184.909 -99.059)'/%3E%3Cpath class='a' d='M24.725,61H4.243A4.248,4.248,0,0,0,0,65.243V78.823a4.248,4.248,0,0,0,4.243,4.243H24.725a4.248,4.248,0,0,0,4.243-4.243V65.243A4.248,4.248,0,0,0,24.725,61Zm2.546,17.823a2.549,2.549,0,0,1-2.546,2.546H4.243A2.549,2.549,0,0,1,1.7,78.823V65.243A2.549,2.549,0,0,1,4.243,62.7H24.725a2.549,2.549,0,0,1,2.546,2.546Z' transform='translate(0 0)'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 40px;
+  background-size: 18px auto;
+}
+
+.checkbox__custom-3:checked + label.video__icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28.969' height='22.066' viewBox='0 0 28.969 22.066'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(0 -61)'%3E%3Cpath class='a' d='M204.087,170.372l-6.79-4.243a.849.849,0,0,0-1.3.72v8.487a.849.849,0,0,0,1.3.72l6.79-4.243a.849.849,0,0,0,0-1.439ZM197.7,173.8V168.38l4.34,2.712Z' transform='translate(-184.909 -99.059)'/%3E%3Cpath class='a' d='M24.725,61H4.243A4.248,4.248,0,0,0,0,65.243V78.823a4.248,4.248,0,0,0,4.243,4.243H24.725a4.248,4.248,0,0,0,4.243-4.243V65.243A4.248,4.248,0,0,0,24.725,61Zm2.546,17.823a2.549,2.549,0,0,1-2.546,2.546H4.243A2.549,2.549,0,0,1,1.7,78.823V65.243A2.549,2.549,0,0,1,4.243,62.7H24.725a2.549,2.549,0,0,1,2.546,2.546Z' transform='translate(0 0)'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .webinar__blue {
@@ -3855,6 +3905,148 @@ label {
   border-radius: 100%;
 }
 
+/*** Mediathek ***/
+.lock__icon {
+  background-image: url('../img/mediathek/lock.svg');
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  background-size: 14px auto;
+  background-position: 0 1px;
+  padding: 4px 0 0 20px;
+}
+
+.padlock__icon {
+  background-image: url('../img/mediathek/padlock.svg');
+  background-repeat: no-repeat;
+  margin-left: 15px;
+  background-size: 14px auto;
+  background-position: 0 1px;
+  padding: 4px 0 0 20px;
+}
+
+.video__type {
+  position: relative;
+}
+
+.video__type:before {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 67px;
+  height: 47px;
+  background-color: var(--main-blue);
+  background-image: url('../img/mediathek/youtube.svg');
+  background-repeat: no-repeat;
+  background-size: 47px auto;
+  background-position: center;
+}
+
+@media (min-width: 1600px) {
+  .custom__element-8,
+  .custom__element-9,
+  .custom__element-10,
+  .custom__element-11,
+  .custom__element-12 {
+    position: relative;
+  }
+
+  .custom__element-8:before,
+  .custom__element-9:before,
+  .custom__element-10:before,
+  .custom__element-11:before,
+  .custom__element-12:before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -130px;
+    top: 8px;
+    background-image: url('../img/mediathek/blog.svg');
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+  }
+
+  .custom__element-9:before {
+    background-image: url('../img/mediathek/videoconference.svg');
+    top: -30px;
+  }
+
+  .custom__element-10:before {
+    background-image: url('../img/mediathek/law.svg');
+    top: -30px;
+  }
+
+  .custom__element-11:before {
+    background-image: url('../img/mediathek/interview.svg');
+    top: -30px;
+  }
+
+  .custom__element-12:before {
+    background-image: url('../img/mediathek/technology.svg');
+    background-size: 72px auto;
+    width: 72px;
+    height: 107px;
+    left: -110px;
+    top: -30px;
+  }
+}
+
+/*** Carousel ***/
+.carousel__outer {
+  position: relative;
+  margin: 20px 0 0;
+}
+
+.carousel__outer .tns-controls button[data-controls='prev'],
+.carousel__outer .tns-controls button[data-controls='next'] {
+  position: absolute;
+  top: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 2;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 30px auto;
+  background-color: transparent;
+  font-size: 0;
+}
+
+.carousel__outer .tns-controls button[data-controls='prev'] {
+  left: 0px;
+  background-image: url('../img/mediathek/arrow__left.png');
+}
+
+.carousel__outer .tns-controls button[data-controls='next'] {
+  left: 35px;
+  background-image: url('../img/mediathek/arrow__right.png');
+}
+
+@media (min-width: 992px) {
+  .carousel__outer .tns-controls button[data-controls='prev'],
+  .carousel__outer .tns-controls button[data-controls='next'] {
+    width: 68px;
+    height: 68px;
+    background-size: 68px auto;
+    margin-top: -34px;
+    top: 50%;
+  }
+
+  .carousel__outer .tns-controls button[data-controls='next'] {
+    left: auto;
+    right: 0px;
+  }
+
+  .carousel__outer {
+    padding: 0 85px;
+    margin: 0;
+  }
+}
+
 /*** Other ***/
 .arrow__down-grey {
   position: relative;
@@ -3882,6 +4074,12 @@ label {
 
 .custom__buttons-2 a {
   max-width: 215px;
+}
+
+.custom__element-7 {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
 }
 
 .custom__timer {
@@ -4043,33 +4241,6 @@ label {
 
   .document__icon {
     padding: 40px 0 0;
-  }
-}
-
-@media (max-width: 991px) {
-  .checkbox__custom-2:checked + ul {
-    display: block;
-    position: absolute;
-    background: white;
-    z-index: 2;
-    width: calc(100% - 30px);
-    height: 200px;
-    overflow-y: scroll;
-    border: 2px solid var(--grey-border);
-    border-top: none;
-    margin-top: -3px;
-    border-radius: 0 0 0.25rem 0.25rem;
-  }
-
-  .checkbox__custom-2:checked + ul li {
-    display: block;
-    margin: 0 15px;
-    border-radius: 0;
-  }
-
-  .checkbox__custom-2:checked + ul a {
-    display: block;
-    border: none;
   }
 }
 
@@ -4396,6 +4567,27 @@ label {
 }
 
 @media (max-width: 991px) {
+  .checkbox__custom-2:checked + ul {
+    display: block;
+    position: absolute;
+    background: white;
+    z-index: 2;
+    width: calc(100% - 30px);
+    height: 200px;
+    overflow-y: scroll;
+    border: 2px solid var(--grey-border);
+    border-top: none;
+    margin-top: -3px;
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+
+  .checkbox__custom-3 + label {
+    border: none;
+    display: block;
+    border-radius: 0;
+    padding: 10px 20px 12px;
+  }
+
   .select__custom.select__custom-noto-lg {
     display: block;
     line-height: 1.3;
