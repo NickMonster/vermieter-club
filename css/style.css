@@ -1721,6 +1721,10 @@ main .container {
     margin-top: 40px;
   }
 
+  .m-lg__t-46 {
+    margin-top: 46px;
+  }
+
   .m-lg__t-48 {
     margin-top: 48px;
   }
@@ -4003,7 +4007,7 @@ label {
 .carousel__outer .tns-controls button[data-controls='prev'],
 .carousel__outer .tns-controls button[data-controls='next'] {
   position: absolute;
-  top: 5px;
+  bottom: 35px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -4017,32 +4021,40 @@ label {
 }
 
 .carousel__outer .tns-controls button[data-controls='prev'] {
-  left: 0px;
+  left: 50%;
+  margin-left: -35px;
   background-image: url('../img/mediathek/arrow__left.png');
 }
 
 .carousel__outer .tns-controls button[data-controls='next'] {
-  left: 35px;
+  right: 50%;
+  margin-right: -35px;
   background-image: url('../img/mediathek/arrow__right.png');
 }
 
 @media (min-width: 992px) {
   .carousel__outer .tns-controls button[data-controls='prev'],
   .carousel__outer .tns-controls button[data-controls='next'] {
-    width: 68px;
-    height: 68px;
-    background-size: 68px auto;
-    margin-top: -34px;
+    width: 60px;
+    height: 60px;
+    background-size: 60px auto;
+    margin-top: -30px;
     top: 50%;
+  }
+
+  .carousel__outer .tns-controls button[data-controls='prev'] {
+    left: 0;
+    margin-left: 0;
   }
 
   .carousel__outer .tns-controls button[data-controls='next'] {
     left: auto;
     right: 0px;
+    margin-right: 0;
   }
 
   .carousel__outer {
-    padding: 0 85px;
+    padding: 0 70px;
     margin: 0;
   }
 }
