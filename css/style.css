@@ -4007,7 +4007,7 @@ label {
 .carousel__outer .tns-controls button[data-controls='prev'],
 .carousel__outer .tns-controls button[data-controls='next'] {
   position: absolute;
-  bottom: 35px;
+  bottom: 25px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
