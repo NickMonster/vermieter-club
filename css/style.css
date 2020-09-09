@@ -1654,6 +1654,10 @@ main .container {
 }
 
 @media (min-width: 768px) {
+  .m-md-0 {
+    margin: 0;
+  }
+
   .m-md__b-0 {
     margin-bottom: 0px;
   }
@@ -1676,6 +1680,10 @@ main .container {
 
   .m-md__r-15 {
     margin-right: 15px;
+  }
+
+  .p-md-0 {
+    padding: 0;
   }
 
   .p-md__x-30 {
@@ -2244,6 +2252,9 @@ label {
 }
 
 @media (min-width: 768px) {
+  .bg-md-none {
+    background-color: transparent;
+  }
   .d-md-inline-block {
     display: inline-block !important;
   }
