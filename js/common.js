@@ -123,3 +123,8 @@ Array.prototype.forEach.call(inputs, function (input) {
     else label.innerHTML = labelVal;
   });
 });
+
+// Custom scrollbar
+let rsMultiple;
+
+rsMultiple = new RS.RocketScroll('.scroll');
