@@ -29,7 +29,7 @@
 .rocketScroll .scrollbar:hover {
   cursor: pointer;
 }
-.rocketScroll .scrollbar:hover div:hover {
+.rocketScroll .scrollbar div {
   background: #777;
   background: rgba(0, 0, 0, 0.55);
 }
@@ -47,11 +47,11 @@
   background: transparent;
   transition: background-color 0.5s;
 }
-.rocketScroll:hover .scrollbar {
+.rocketScroll .scrollbar {
   background-color: white;
   border: 1px solid #868686;
 }
-.rocketScroll:hover .scrollbar div {
+.rocketScroll .scrollbar div {
   background: #868686;
 }
 .rocketScroll .unselectable {

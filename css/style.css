@@ -2080,6 +2080,10 @@ label {
   float: left;
 }
 
+.cursor__pointer {
+  cursor: pointer;
+}
+
 .scroll {
   overflow-y: scroll;
 }
@@ -2712,6 +2716,15 @@ label {
   padding-left: 55px;
   padding-right: 15px;
   background-position: 12px 10px;
+}
+
+.btn__top.btn__blue {
+  background-repeat: no-repeat;
+  background-image: url('../img/chat/arrow__doubled__top.png');
+  background-size: 10px auto;
+  padding-left: 40px;
+  padding-right: 15px;
+  background-position: 17px;
 }
 
 .btn__white,
@@ -4555,6 +4568,21 @@ label {
   background-repeat: no-repeat;
   border: 1px solid var(--grey-bg);
   background-position: center;
+  background-color: white;
+}
+
+.archive__icon,
+.archive__icon-grey {
+  display: inline-block;
+  width: 23px;
+  height: 18px;
+  background-image: url('../img/chat/archive__icon.png');
+  background-repeat: no-repeat;
+  background-size: 23px auto;
+}
+
+.archive__icon-grey {
+  background-image: url('../img/chat/archive__icon-grey.png');
 }
 
 .chat__reload {
@@ -4570,15 +4598,6 @@ label {
   margin-right: -1px;
   line-height: 38px;
   padding: 0 8px;
-}
-
-.custom__icon {
-  display: inline-block;
-  width: 23px;
-  height: 18px;
-  background-image: url('../img/chat/icon__2.png');
-  background-repeat: no-repeat;
-  background-size: 23px auto;
 }
 
 .link__enter {
@@ -4688,6 +4707,7 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px auto;
+  cursor: pointer;
 }
 
 .button__custom-sort {
@@ -4700,6 +4720,7 @@ label {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 19px auto;
+  cursor: pointer;
 }
 
 .checkbox__custom,

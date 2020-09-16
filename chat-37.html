@@ -108,7 +108,7 @@
                                     <h5 class="font__size-22 color__grey m__b-5 mail__icon-2">Anfragen</h5>
                                 </div>
                                 <div class="col-auto p__r-0">
-                                    <select class="select__custom">
+                                    <select class="select__custom cursor__pointer">
                                         <option>Filtern</option>
                                         <option>Anfragen</option>
                                         <option>Archiv</option>
@@ -129,7 +129,18 @@
                                                 <div class="col">16.09.2020 - 14:19:12</div>
                                             </div>
                                             <div class="text-right">
-                                                <a href="#" class="custom__icon"></a>
+                                                <a href="#" class="archive__icon"></a>
+                                            </div>
+                                        </div>
+
+                                        <div class="border__top-2-dashed-grey p__b-10 p__t-5">
+                                            <p class="font__size-22 m__b-5 color__blue">Kündigung Meier</p>
+                                            <div class="row font__size-14 m__b-15">
+                                                <div class="col">Letzte Nachricht</div>
+                                                <div class="col">16.09.2020 - 14:19:12</div>
+                                            </div>
+                                            <div class="text-right">
+                                                <a href="#" class="archive__icon-grey"></a>
                                             </div>
                                         </div>
 
@@ -140,7 +151,7 @@
                                                 <div class="col">16.09.2020 - 14:19:12</div>
                                             </div>
                                             <div class="text-right">
-                                                <a href="#" class="custom__icon"></a>
+                                                <a href="#" class="archive__icon"></a>
                                             </div>
                                         </div>
 
@@ -151,7 +162,7 @@
                                                 <div class="col">16.09.2020 - 14:19:12</div>
                                             </div>
                                             <div class="text-right">
-                                                <a href="#" class="custom__icon"></a>
+                                                <a href="#" class="archive__icon"></a>
                                             </div>
                                         </div>
 
@@ -162,7 +173,7 @@
                                                 <div class="col">16.09.2020 - 14:19:12</div>
                                             </div>
                                             <div class="text-right">
-                                                <a href="#" class="custom__icon"></a>
+                                                <a href="#" class="archive__icon"></a>
                                             </div>
                                         </div>
 
@@ -173,18 +184,7 @@
                                                 <div class="col">16.09.2020 - 14:19:12</div>
                                             </div>
                                             <div class="text-right">
-                                                <a href="#" class="custom__icon"></a>
-                                            </div>
-                                        </div>
-
-                                        <div class="border__top-2-dashed-grey p__b-10 p__t-5">
-                                            <p class="font__size-22 m__b-5">Kündigung Meier</p>
-                                            <div class="row font__size-14 m__b-15">
-                                                <div class="col">Letzte Nachricht</div>
-                                                <div class="col">16.09.2020 - 14:19:12</div>
-                                            </div>
-                                            <div class="text-right">
-                                                <a href="#" class="custom__icon"></a>
+                                                <a href="#" class="archive__icon"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -194,13 +194,13 @@
                             <div class="border__top-2-dashed-grey">
                                 <div class="m__t-20 m__b-15 row">
                                     <div class="col d-flex p__r-0">
-                                        <span class="link_first_page"></span>
-                                        <span class="link_prev_page"></span>
-                                        <span class="current_page">1</span>
-                                        <span class="total_page">of 2</span>
-                                        <span class="link__enter"></span>
-                                        <span class="link_next_page-active"></span>
-                                        <span class="link_last_page-active"></span>
+                                        <button class="link_first_page"></button>
+                                        <button class="link_prev_page"></button>
+                                        <button class="current_page">1</button>
+                                        <button class="total_page">of 2</button>
+                                        <button class="link__enter"></button>
+                                        <button class="link_next_page-active"></button>
+                                        <button class="link_last_page-active"></button>
                                     </div>
                                     <div class="col-auto">
                                         <span class="chat__reload"></span>
@@ -242,6 +242,9 @@
                             <div class="scroll custom__scrollbar-2">
                                 <div class="scrollDiv">
                                     <div class="scrollContent p__r-30">
+                                        <div class="text-center">
+                                            <button class="btn__blue btn__top">ältere Nachrichten</button>
+                                        </div>
                                         <div class="text-center m__y-20">
                                             <span
                                                 class="color__blue font__bold font__size-22 d-inline-block border__radius-10 p__x-15 bg__grey-light p__t-5 p__b-7">
