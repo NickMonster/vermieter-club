@@ -2312,6 +2312,10 @@ label {
   position: relative;
 }
 
+.rounded {
+  border-radius: 50%;
+}
+
 .text-center {
   text-align: center !important;
 }
