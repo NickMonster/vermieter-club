@@ -1143,6 +1143,10 @@ main .container {
   .offset-xl-2 {
     margin-left: 16.666667%;
   }
+
+  .offset-xl-5 {
+    margin-left: 41.666667%;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -1587,6 +1591,10 @@ main .container {
 
 .p__r-0 {
   padding-right: 0;
+}
+
+.p__r-5 {
+  padding-right: 5px;
 }
 
 .p__r-15 {

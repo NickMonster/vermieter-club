@@ -17,7 +17,7 @@
 }
 .rocketScroll .scrollbar {
   position: absolute;
-  right: 6px;
+  right: 0px;
   top: 7px;
   bottom: 6px;
   background: transparent;
