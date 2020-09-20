@@ -127,4 +127,37 @@ Array.prototype.forEach.call(inputs, function (input) {
 // Custom scrollbar
 let rsMultiple;
 
-rsMultiple = new RS.RocketScroll('.scroll');
+if (window.innerWidth >= 992) {
+  rsMultiple = new RS.RocketScroll('.scroll');
+}
+
+// Chat tabs
+if (window.innerWidth < 992) {
+  let chatTabs = document.querySelectorAll('.chatTab');
+  let chatTabContent = document.querySelectorAll('.chatTabContent');
+  Array.from(chatTabs).forEach(el3 => {
+    el3.addEventListener('click', () => {
+      if (!el3.classList.contains('active__tab')) {
+        Array.from(chatTabs).forEach(el5 => {
+          el5.classList.remove('active__tab');
+        });
+
+        el3.classList.add('active__tab');
+
+        Array.from(chatTabContent).forEach(el4 => {
+          el4.classList.add('d__none');
+        });
+
+        if (el3.getAttribute('id') == 'chatTab1') {
+          document
+            .querySelector('#chatTabContent1')
+            .classList.remove('d__none');
+        } else if (el3.getAttribute('id') == 'chatTab2') {
+          document
+            .querySelector('#chatTabContent2')
+            .classList.remove('d__none');
+        }
+      }
+    });
+  });
+}
