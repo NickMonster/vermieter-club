@@ -135,9 +135,14 @@ if (window.innerWidth >= 992) {
 if (window.innerWidth < 992) {
   let chatTabs = document.querySelectorAll('.chatTab');
   let chatTabContent = document.querySelectorAll('.chatTabContent');
+  let commentsLink = document.querySelector('#commentsLink');
+  let chatComments = document.querySelector('#chatComments');
+  let chatBack = document.querySelector('#chatBack');
+
   Array.from(chatTabs).forEach(el3 => {
     el3.addEventListener('click', () => {
       if (!el3.classList.contains('active__tab')) {
+        chatComments.classList.add('d__none');
         Array.from(chatTabs).forEach(el5 => {
           el5.classList.remove('active__tab');
         });
@@ -164,12 +169,18 @@ if (window.innerWidth < 992) {
       }
     });
   });
+
+  commentsLink.addEventListener('click', () => {
+    document.querySelector('#chatTabContent1').classList.add('d__none');
+    Array.from(chatTabs).forEach(el5 => {
+      el5.classList.remove('active__tab');
+    });
+    chatComments.classList.remove('d__none');
+  });
+
+  chatBack.addEventListener('click', () => {
+    chatComments.classList.add('d__none');
+    document.querySelector('#chatTab1').classList.add('active__tab');
+    document.querySelector('#chatTabContent1').classList.remove('d__none');
+  });
 }
-
-let commentsLink = document.querySelector('#commentsLink');
-let chatComments = document.querySelector('#chatComments');
-
-commentsLink.addEventListener('click', () => {
-  document.querySelector('#chatTabContent1').classList.add('d__none');
-  chatComments.classList.remove('d__none');
-});
