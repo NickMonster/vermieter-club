@@ -28,7 +28,7 @@
   --dark-blue-bg-2: #0e0e65;
   --blue-grey: #262c7c60;
   --white: #fff;
-  --orange: #f5b841;
+  --orange: #f5a227;
   --grey-text: #6c6c6c;
   --grey-text-2: #a3a3a3;
   --grey-text-3: #707070;
@@ -1646,6 +1646,10 @@ main .container {
   padding-left: 30px;
 }
 
+.p__l-38 {
+  padding-left: 38px;
+}
+
 .p__l-42 {
   padding-left: 42px;
 }
@@ -1954,6 +1958,10 @@ main .container {
 
   .p-lg__l-0 {
     padding-left: 0px;
+  }
+
+  .p-lg__l-38 {
+    padding-left: 38px;
   }
 
   .p-lg__l-50 {
@@ -2486,6 +2494,7 @@ label {
 
   .custom__scrollbar {
     height: 300px;
+    margin-left: -38px;
   }
 
   .custom__scrollbar-2 {
@@ -2742,13 +2751,18 @@ label {
   cursor: pointer;
 }
 
-.btn__custom-box.btn__blue {
+.btn__archive.btn__blue,
+.btn__archive.btn__orange {
   background-repeat: no-repeat;
   background-image: url('../img/chat/icon__1.png');
   background-size: 30px auto;
   padding-left: 55px;
   padding-right: 15px;
   background-position: 12px 11px;
+}
+
+.btn__archive.btn__orange {
+  background-image: url('../img/chat/archive__icon-orange.png');
 }
 
 .btn__grey {
@@ -2759,7 +2773,7 @@ label {
 
 .btn__orange {
   background-color: var(--orange);
-  color: var(--text-blue);
+  color: white;
 }
 
 .btn__plus.btn__blue {
@@ -4416,6 +4430,7 @@ label {
 }
 
 /*** Chat ***/
+.archive__icon-2,
 .mail__icon-2,
 .search__icon-2 {
   position: relative;
@@ -4452,6 +4467,19 @@ label {
 
 .archive__icon-grey {
   background-image: url('../img/chat/archive__icon-grey.png');
+}
+
+.archive__icon-2:before {
+  content: '';
+  position: absolute;
+  background-image: url('../img/chat/archive__icon-2.png');
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px auto;
+  left: -38px;
 }
 
 .chat__reload {
@@ -4796,9 +4824,12 @@ label {
 
 .checkbox__custom,
 .checkbox__custom-3,
-.checkbox__custom-4,
 .radio__custom {
   position: absolute;
+  opacity: 0;
+}
+
+.checkbox__custom-4 {
   opacity: 0;
 }
 
@@ -4828,7 +4859,7 @@ label {
 .checkbox__custom-4 + label:before {
   margin: 0;
   position: absolute;
-  left: 0;
+  left: 0px;
   top: 10px;
 }
 
@@ -5114,9 +5145,12 @@ label {
     height: 16px;
   }
 
-  .checkbox__custom-4 + label::before,
-  .checkbox__custom-4:checked + label::after {
-    display: none;
+  .checkbox__custom-4 + label:before {
+    left: -38px;
+  }
+
+  .checkbox__custom-4:checked + label:after {
+    left: -32px;
   }
 
   .file__custom + label span {

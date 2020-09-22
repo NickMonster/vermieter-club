@@ -156,6 +156,10 @@ if (window.innerWidth < 992) {
           document
             .querySelector('#chatTabContent2')
             .classList.remove('d__none');
+        } else if (el3.getAttribute('id') == 'chatTab3') {
+          document
+            .querySelector('#chatTabContent3')
+            .classList.remove('d__none');
         }
       }
     });

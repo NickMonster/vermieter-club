@@ -90,6 +90,7 @@ RS.RocketScroll.prototype.bindEvents = function () {
 
   // Just stop propagating click to scrollbar
   this.handle.onclick = function (e) {
+    console.log('112');
     RS.stopPropagation(e);
   };
 
