@@ -1960,6 +1960,10 @@ main .container {
     padding-left: 0px;
   }
 
+  .p-lg__l-30 {
+    padding-left: 30px;
+  }
+
   .p-lg__l-38 {
     padding-left: 38px;
   }
@@ -1970,6 +1974,14 @@ main .container {
 
   .p-lg__l-65 {
     padding-left: 65px;
+  }
+
+  .p-lg__r-15 {
+    padding-right: 15px;
+  }
+
+  .p-lg__r-30 {
+    padding-right: 15px;
   }
 
   .p-lg__y-22 {
@@ -2405,6 +2417,10 @@ label {
 }
 
 @media (min-width: 576px) {
+  .d-sm-block {
+    display: block !important;
+  }
+
   .justify-content-sm-between {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
@@ -2758,7 +2774,7 @@ label {
   background-size: 30px auto;
   padding-left: 55px;
   padding-right: 15px;
-  background-position: 12px 11px;
+  background-position: 12px 16px;
 }
 
 .btn__archive.btn__orange {
@@ -2791,7 +2807,7 @@ label {
   background-size: 30px auto;
   padding-left: 55px;
   padding-right: 15px;
-  background-position: 12px 10px;
+  background-position: 12px 14px;
 }
 
 .btn__top.btn__blue {
@@ -2856,6 +2872,15 @@ label {
 
   .btn__blue-4 {
     padding: 6px 20px 8px;
+  }
+
+  .btn__archive.btn__blue,
+  .btn__archive.btn__orange {
+    background-position: 12px 11px;
+  }
+
+  .btn__send.btn__blue {
+    background-position: 12px 10px;
   }
 }
 
@@ -4859,8 +4884,8 @@ label {
 .checkbox__custom-4 + label:before {
   margin: 0;
   position: absolute;
-  left: 0px;
-  top: 10px;
+  left: -17px;
+  top: 35px;
 }
 
 .checkbox__custom:disabled + label {
@@ -4886,7 +4911,8 @@ label {
 }
 
 .checkbox__custom-4:checked + label:after {
-  top: 16px;
+  top: 41px;
+  left: -11px;
 }
 
 .checkbox__custom-3 + label {
@@ -5040,6 +5066,11 @@ label {
   font-size: 20px;
 }
 
+.input__text.input__text-search {
+  padding: 0.4em 1.3em 0.5em 0.7em;
+  font-size: 16px;
+}
+
 .input__text.valid {
   border: 2px solid var(--green-main);
 }
@@ -5146,11 +5177,11 @@ label {
   }
 
   .checkbox__custom-4 + label:before {
-    left: -38px;
+    left: -53px;
   }
 
   .checkbox__custom-4:checked + label:after {
-    left: -32px;
+    left: -47px;
   }
 
   .file__custom + label span {

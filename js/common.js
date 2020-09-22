@@ -165,3 +165,11 @@ if (window.innerWidth < 992) {
     });
   });
 }
+
+let commentsLink = document.querySelector('#commentsLink');
+let chatComments = document.querySelector('#chatComments');
+
+commentsLink.addEventListener('click', () => {
+  document.querySelector('#chatTabContent1').classList.add('d__none');
+  chatComments.classList.remove('d__none');
+});
