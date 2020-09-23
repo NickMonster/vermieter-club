@@ -796,6 +796,13 @@ a.text__decoration-none {
   max-width: 75%;
 }
 
+.col-10 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 83.333333%;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -2452,6 +2459,10 @@ label {
   .justify-content-sm-between {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
+  }
+
+  .text-sm-left {
+    text-align: left !important;
   }
 
   .text-sm-center {
