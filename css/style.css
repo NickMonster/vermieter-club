@@ -1486,6 +1486,11 @@ main .container {
   margin-bottom: 20px;
 }
 
+.m__y-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .m__y-60 {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -1732,6 +1737,11 @@ main .container {
   .m-sm__x-0 {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .m-sm__y-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .m-sm__l-25 {
@@ -2090,7 +2100,11 @@ label {
 }
 
 .border__radius-20 {
-  border-radius: 18px;
+  border-radius: 20px;
+}
+
+.border__radius-30 {
+  border-radius: 30px;
 }
 
 .border__1-grey {
@@ -2438,6 +2452,10 @@ label {
   .justify-content-sm-between {
     -ms-flex-pack: justify !important;
     justify-content: space-between !important;
+  }
+
+  .text-sm-center {
+    text-align: center !important;
   }
 }
 
@@ -4593,6 +4611,7 @@ label {
   background-position: center;
   background-size: 36px auto;
   left: -40px;
+  top: -3px;
 }
 
 .search__icon-2:before {
@@ -4607,6 +4626,7 @@ label {
   border-radius: 50%;
   background-position: center;
   left: -38px;
+  top: -3px;
 }
 
 .total_page {
