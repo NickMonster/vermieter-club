@@ -1697,6 +1697,12 @@ main .container {
   padding-right: 15px;
 }
 
+.p__x-17,
+.btn__grey.p__x-17 {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
 .p__x-20 {
   padding-left: 20px;
   padding-right: 20px;
@@ -4054,10 +4060,6 @@ label {
 }
 
 /*** Profile page ***/
-.custom__buttons a {
-  max-width: 250px;
-}
-
 .profile__image {
   width: 123px;
   height: 123px;
