@@ -1,0 +1,62 @@
+.rocketScroll {
+  overflow: hidden !important;
+  position: relative;
+}
+.rocketScroll .scrollDiv {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100%;
+}
+.rocketScroll .scrollContent {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px 0 0;
+}
+.rocketScroll .scrollbar {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  bottom: 6px;
+  background: transparent;
+  width: 10px;
+  border-radius: 8px;
+  transition: background-color 0.5s;
+  overflow: hidden;
+}
+.rocketScroll .scrollbar:hover {
+  cursor: pointer;
+}
+.rocketScroll .scrollbar div {
+  background: #777;
+  background: rgba(0, 0, 0, 0.55);
+}
+.rocketScroll .scrollbar,
+.rocketScroll .scrollbar div {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.rocketScroll .scrollbar div {
+  height: 100px;
+  width: 8px;
+  border-radius: 3px;
+  background: transparent;
+  transition: background-color 0.5s;
+}
+.rocketScroll .scrollbar {
+  background-color: white;
+  border: 1px solid #868686;
+}
+.rocketScroll .scrollbar div {
+  background: #868686;
+}
+.rocketScroll .unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vermieter Club</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body class="relative">
+    <header class="header__main" id="headerMain">
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col p__y-28 p-lg__y-22 p__x-15 p-sm__x-30 d-flex align-items-center justify-content-between">
+                    <a href="/" class="m-lg__r-35  logo__header">
+
+
+                    </a>
+
+                    <div class="d-flex align-items-center w-xl-100">
+                        <a href="#" class="order-2 d-none d-lg-flex align-items-center m__r-25 login__icon-desktop">
+
+                            <span class="m__l-10 d-none d-xll-inline-block">Antrag auf Mitgliedschaft</span>
+                        </a>
+                        <a href="#" class="m__r-15 m__l-15 order-2 order-lg-4 search__icon">
+
+                        </a>
+                        <a href="#"
+                            class="m__r-15 m-lg__r-0 order-2 order-lg-5 d-md-flex align-items-center btn__lg-primary-white login__icon">
+                            <span class="m__l-10 d-none d-lg-inline-block font__size-24 font__size-lg-20">Zum
+                                Login</span>
+                        </a>
+                        <a href="#" class="order-2 order-lg-3 relative cart__icon">
+
+                            <sup class="cart__number">3</sup>
+                        </a>
+
+                        <nav role="navigation" class="main__nav order-2 order-lg-5 order-xl-1 p__l-30 m__r-auto">
+                            <div class="menu__nav-toggle m__t-10">
+                                <input type="checkbox" id="menuSwitcher" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul class="main__nav-list">
+                                    <li>
+                                        <div class="hasSubMenu">Leistungen</div>
+                                        <ul>
+                                            <li><a href="#">Experten Chat</a></li>
+                                            <li><a href="#">Mediathek</a></li>
+                                            <li><a href="#">Dokumentvorlagen</a></li>
+                                            <li><a href="#">Webinare</a></li>
+                                            <li><a href="#">Interessenvertretung</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Aktuelles</a></li>
+                                    <li><a href="#">Über uns</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Kontakt</a></li>
+                                    <li class="d-xl-none text-center m__t-107">
+                                        <a href="#" class="btn__white">Mitglied werden</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="m__t-37 m-lg__t-80 m__b-72 m-lg__b-60">
+        <div class="container">
+
+            <div class="font__size-16 font__size-md-18 m__b-10 color__grey font__bold">
+                Vermieterclub / Warenkorb
+            </div>
+
+            <h1 class="m__b-25 m-lg__b-55">
+                Kasse
+            </h1>
+
+            <div class="row">
+
+                <div class="col-lg-6 col-xl-7">
+                    <h3 class="color__blue font__size-30 font__size-lg-34 m__b-30">Kundendaten</h3>
+                    <form>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Anrede*
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Vorname*
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Nachname*
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Firmenname (optional)
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Straßenname und Hausnummer*
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                PLZ*
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Ort*
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Telefonnummer (optional)
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <label class="w-100 m__b-50">
+                            <div class="color__grey m__b-5 font__bold">
+                                E-Mail-Adresse
+                            </div>
+                            <input type="email" class="input__text">
+                        </label>
+                        <div>
+                            <input type="checkbox" name="newsletter" id="newsletter" class="checkbox__custom">
+                            <label for="newsletter">Ich möchte Newsletter von Vermieterclub erhalten.</label>
+                        </div>
+                        <h3 class="color__blue font__size-30 font__size-lg-34 m__b-30 m__t-50">Gutschein</h3>
+                        <label class="w-100">
+                            <input type="email" class="input__text" value="1235t6q1">
+                        </label>
+                        <h3 class="color__blue font__size-30 font__size-lg-34 m__b-30 m__t-50">Zahlungsdaten</h3>
+                        <div class="row m__b-25">
+                            <div class="col-md-auto">
+                                <input type="radio" name="paymentType" id="creditCard" class="radio__custom">
+                                <label for="creditCard" class="color__grey font__bold">Per Kreditkarte</label>
+                            </div>
+                            <div class="col-md-auto">
+                                <input type="radio" name="paymentType" id="paypal" class="radio__custom">
+                                <label for="paypal" class="color__grey font__bold">Paypal</label>
+                            </div>
+                            <div class="col-md-auto">
+                                <input type="radio" name="paymentType" id="rechnung" class="radio__custom">
+                                <label for="rechnung" class="color__grey font__bold">Auf Rechnung</label>
+                            </div>
+                        </div>
+
+                        <label class="w-100">
+                            <div class="color__grey m__b-5 font__bold">
+                                Kredit-/Debitkartennummer
+                            </div>
+                            <input type="text" class="input__text">
+                        </label>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="w-100">
+                                    <div class="color__grey m__b-5 font__bold">
+                                        Ablaufmonat
+                                    </div>
+                                    <select class="select__custom">
+                                        <option>Apple</option>
+                                        <option>Bananas</option>
+                                        <option>Grapes</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="w-100">
+                                    <div class="color__grey m__b-5 font__bold">
+                                        Ablaufjahr
+                                    </div>
+                                    <input type="text" class="input__text">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <label class="w-100">
+                                    <div class="color__grey m__b-5 font__bold">
+                                        Postleitzahl
+                                    </div>
+                                    <input type="text" class="input__text">
+                                </label>
+                            </div>
+                            <div class="offset-lg-1 col-lg-3">
+                                <label class="w-100">
+                                    <div class="color__grey m__b-5 font__bold">
+                                        CVC
+                                    </div>
+                                    <input type="text" class="input__text">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="m__t-30 font__size-20">
+                            <input type="checkbox" name="" id="checkbox-1" class="checkbox__custom">
+                            <label for="checkbox-1" class="lh-1-1 color__grey">Mit Ihrer Bestellung erklären Sie sich
+                                mit unseren
+                                <a href="">AGB</a>
+                                und <a href="">Widerrufsbestimmungen</a> einverstanden.
+                            </label>
+                        </div>
+                        <div class="font__size-20 m__b-25">
+                            <input type="checkbox" name="" id="checkbox-2" class="checkbox__custom">
+                            <label for="checkbox-2" class="lh-1-1 color__grey"><b>Für digitale Produkte:</b> Ich stimme
+                                ausdrücklich zu, dass vor
+                                Ablauf der
+                                Widerrufsfrist mit der Ausführung des Vertrags
+                                begonnen wird. Mir ist bekannt, dass mit Beginn der Ausführung mein
+                                Widerrufsrecht
+                                erlischt.
+                            </label>
+                        </div>
+                        <div class="text-right m__t-50 m__b-50">
+                            <button class="btn__clear">Abbrechen</button>
+                            <button class="btn__orange">Jetzt kaufen</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-6 col-xl-5">
+                    <div
+                        class="bg__blue color__white font__size-18 border__radius-lg-18 p__x-20 p__y-28 m__b-100 font__bold m__x--25 m-lg__x-0">
+                        <h3 class="font__size-34 m__b-35">Ihre Bestellung</h3>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <p class="font__size-26 m__b-0">Mietvertrag Haus mit Gartennutzung Indexmiete</p>
+                                <p class="font__size-20">Cicerostr. 43 12055 Berlin</p>
+                                <hr class="border__bottom-3-white d-md-none">
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <p class="font__size-34">5,00 €</p>
+                            </div>
+                        </div>
+
+                        <hr class="border__bottom-3-white d-none d-md-block">
+
+                        <div class="row">
+                            <div class="col-md-9">
+                                <p class="font__size-26 m__b-0">Webinar: Die Auswirkungen von COVID 19 auf das WEG-Recht
+                                </p>
+                                <p class="font__size-20">
+                                    teilnehmer-1@Immobilien-firma.de<br /> teilnehmer-2@Immobilien-firma.de<br />
+                                    teilnehmer-3@Immobilien-firma.de<br />
+                                    teilnehmer-2@Immobilien-firma.de<br /> teilnehmer-3@Immobilien-firma.de
+                                </p>
+                                <hr class="border__bottom-3-white d-md-none">
+                            </div>
+
+                            <div class="col-md-3 text-right">
+                                <p class="font__size-34">5,00 €</p>
+                            </div>
+                        </div>
+
+                        <hr class="border__bottom-3-white">
+
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p class="font__size-18 m__b-0">Rabatt Mitgliedschaft. (Auf Netto Preis)</p>
+                            </div>
+                            <div class="col-sm-3 text-right">
+                                <p class="font__size-28 m__b-0">-1,50 €</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p class="font__size-26 m__b-0">Bruttobetrag</p>
+                            </div>
+                            <div class="col-sm-3 text-right">
+                                <p class="font__size-34 m__b-0">8,50 €</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p class="font__size-18 m__b-0">inkl. Gesetzliche MwSt.</p>
+                            </div>
+                            <div class="col-sm-3 text-right">
+                                <p class="font__size-28 m__b-0">1,17 €</p>
+                            </div>
+                        </div>
+
+                        <hr class="border__bottom-3-white">
+
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p class="font__size-18 m__b-0">Gutschein</p>
+                            </div>
+                            <div class="col-sm-3 text-right">
+                                <p class="font__size-28 m__b-0">-5,00 €</p>
+                            </div>
+                        </div>
+
+                        <hr class="border__bottom-3-white">
+
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p class="font__size-26">Gesamtsumme</p>
+                            </div>
+                            <div class="col-sm-3 text-right">
+                                <p class="font__size-34">3,50 €</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="text-center color__white bg__blue-dark border__radius-lg-18 p-20 p__t-32 m__x--25 m-lg__x-0">
+                        <h3 class="font__size-30 m__b-54">Werden Sie Teil einer starken Gemeinschaft</h3>
+                        <img src="img/login.svg" alt="" width="60">
+                        <div class="m__b-48 m__t-55"><a href="#" class="btn__orange">Mitglied werden</a></div>
+                        <p class="font__bold font__size-19">Mitglieder erhalten<br> 15 % Rabatt<br> auf alle
+                            Dokumente
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class=" footer__main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    <ul>
+                        <li>
+                            <div class="footer__title"><a href="#" class="m__b-0">Leistungen</a></div>
+                            <ul class="m__b-30">
+                                <li><a href="#">Experten Chat</a></li>
+                                <li><a href="#">Mediathek</a></li>
+                                <li><a href="#">Dokumentvorlagen</a></li>
+                                <li><a href="#">Webinare</a></li>
+                                <li><a href="#" class="m__b-0">Interessenvertretung</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="footer__title">Aktuelles</a></li>
+                        <li><a href="#" class="footer__title">Über uns</a></li>
+                        <li><a href="#" class="footer__title">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-12  m__t-50 border__top__y-15-white d-lg-none"></div>
+                <div
+                    class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 m-lg__t-0 p__t-50 p-lg__t-0 col-lg-5 offset-lg-0 order-lg-2 newsletter__form">
+                    <div class="footer__title">Newsletter Anmeldung</div>
+                    <p class="font__size-20 font__size-lg-16 m__b-30">Sie erhalten regelmäßig Neuigkeiten zu den Themen
+                        Vermietung und
+                        Immobilien.
+                    </p>
+                    <form>
+                        <label class="w-100 font__size-20 font__size-lg-16 m__b-30">
+                            <div class="m__b-10">Ihre E-Mail Adresse</div>
+                            <input type="email" class="w-100 input__text-small" />
+                        </label>
+                        <input type="checkbox" id="acceptTerms" name="acceptTerms" class="checkbox__custom" />
+                        <label for="acceptTerms" class="text-left">Ich habe die Hinweise zur
+                            Datenverarbeitung zur
+                            Kenntnis
+                            genommen.</label>
+                        <div class="text-right"><button class="btn__white-small">Abonnieren</button></div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-xl-2 m__t-100 m-lg__t-0">
+                    <div class="footer__title">Kontakt</div>
+                    <div class="lh-1-5">
+                        Vermieterclub e.V.<br />
+                        Strausberger Platz 1<br />
+                        10243 Berlin
+                    </div>
+                    <div class="footer__title m__t-30">E-Mail</div>
+                    <a href="mailto: info@vermieterclub.de">info@vermieterclub.de</a>
+                </div>
+                <div
+                    class="col-lg-2 offset-xl-1 text-center align-items-center d-lg-flex m__t-100 m-lg__t-0 footer__logo">
+                    <a href="#"><img src="img/logo-small.svg" alt="" /></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col m__t-50 m-lg__t-40 text-center text-lg-right font__size-20 font__size-lg-16">
+                    <a href="#">Impressum</a>
+                    <a href="#" class="m__l-26">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+</body>
+
+</html>
