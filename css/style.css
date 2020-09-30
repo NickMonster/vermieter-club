@@ -1697,6 +1697,12 @@ main .container {
   padding-right: 15px;
 }
 
+.p__x-17,
+.btn__grey.p__x-17 {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
 .p__x-20 {
   padding-left: 20px;
   padding-right: 20px;
@@ -3072,6 +3078,23 @@ label {
   width: 45px;
 }
 
+.logged__in:before {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.7 40.53'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='2.87 2.83 33.87 34.83 65.87 2.83' style='fill:none;stroke:%23fff;stroke-miterlimit:10;stroke-width:8px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 16px;
+  position: absolute;
+  left: -45px;
+  top: 50%;
+  margin-top: -6px;
+}
+
+.logged__in.selected:before {
+  transform: rotate(180deg);
+}
+
 .login__icon-desktop {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M196.008.028c-.046,0-.084-.028-.132-.028H176.168a5.507,5.507,0,0,0-5.5,5.5V7.333a1.833,1.833,0,1,0,3.666,0V5.5a1.836,1.836,0,0,1,1.834-1.833h8.541l-.559.187a3.685,3.685,0,0,0-2.482,3.479v27.5h-5.5A1.836,1.836,0,0,1,174.334,33V29.333a1.833,1.833,0,1,0-3.666,0V33a5.507,5.507,0,0,0,5.5,5.5h5.5v1.833A3.67,3.67,0,0,0,185.334,44a3.846,3.846,0,0,0,1.168-.182l11.015-3.672A3.685,3.685,0,0,0,200,36.667v-33A3.674,3.674,0,0,0,196.008.028Zm0,0' transform='translate(-156.001)'/%3E%3Cpath class='a' d='M19.629,114.533,12.3,107.2a1.833,1.833,0,0,0-3.129,1.3V114H1.833a1.833,1.833,0,0,0,0,3.667H9.167v5.5a1.833,1.833,0,0,0,3.129,1.3l7.333-7.334A1.831,1.831,0,0,0,19.629,114.533Zm0,0' transform='translate(0 -97.496)'/%3E%3C/svg%3E");
   height: 40px;
@@ -3108,25 +3131,6 @@ label {
   background-size: 39px auto;
   background-position: center;
   height: 39px;
-}
-
-@media (min-width: 468px) {
-  .logged__in:before {
-    content: '';
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68.7 40.53'%3E%3Ctitle%3EAsset 1%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline points='2.87 2.83 33.87 34.83 65.87 2.83' style='fill:none;stroke:%23fff;stroke-miterlimit:10;stroke-width:8px'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 30px;
-    height: 16px;
-    position: absolute;
-    left: -45px;
-    top: 50%;
-    margin-top: -6px;
-  }
-
-  .logged__in.selected:before {
-    transform: rotate(180deg);
-  }
 }
 
 @media (min-width: 992px) {
@@ -4054,10 +4058,6 @@ label {
 }
 
 /*** Profile page ***/
-.custom__buttons a {
-  max-width: 250px;
-}
-
 .profile__image {
   width: 123px;
   height: 123px;
