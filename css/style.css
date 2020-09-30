@@ -4534,9 +4534,13 @@ label {
 .chat__reload,
 .link_first_page,
 .link_prev_page,
+.link_next_page,
+.link_last_page,
 .current_page,
 .total_page,
 .link__enter,
+.link_first_page-active,
+.link_prev_page-active,
 .link_next_page-active,
 .link_last_page-active {
   display: inline-block;
@@ -4619,7 +4623,8 @@ label {
   background-size: 16px auto;
 }
 
-.link_first_page {
+.link_first_page,
+.link_first_page-active {
   width: 38px;
   height: 40px;
   border-radius: 0.25rem 0 0 0.25rem;
@@ -4628,6 +4633,11 @@ label {
   margin-right: -1px;
 }
 
+.link_first_page-active {
+  background-image: url('../img/chat/arrow__doubled__left.png');
+}
+
+.link_last_page,
 .link_last_page-active {
   width: 38px;
   height: 40px;
@@ -4636,6 +4646,11 @@ label {
   background-size: 15px auto;
 }
 
+.link_last_page {
+  background-image: url('../img/chat/arrow__doubled__right-no-active.png');
+}
+
+.link_next_page,
 .link_next_page-active {
   width: 38px;
   height: 40px;
@@ -4644,12 +4659,21 @@ label {
   margin-right: -1px;
 }
 
-.link_prev_page {
+.link_next_page {
+  background-image: url('../img/chat/arrow__right-no-active.png');
+}
+
+.link_prev_page,
+.link_prev_page-active {
   width: 38px;
   height: 40px;
   margin-right: -1px;
   background-image: url('../img/chat/arrow__left-no-active.png');
   background-size: 8px auto;
+}
+
+.link_prev_page-active {
+  background-image: url('../img/chat/arrow__left.png');
 }
 
 .mail__icon-2:before {
