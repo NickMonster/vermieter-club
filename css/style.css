@@ -30,10 +30,13 @@
   --white: var(--white);
   --orange: #f5a227;
   --grey-text: #6c6c6c;
+  --grey-var-2: #504c4c;
   --grey-text-2: #a3a3a3;
   --grey-text-3: #707070;
   --grey-text-4: #838383;
   --grey-border: #bebebe;
+  --grey-var: #b8b8b8;
+  --grey-var-3: #d0d0d0;
   --grey-bg: #e5e5e5;
   --grey-bg-2: #bfbfbf;
   --green-main: #2fb26b;
@@ -2153,7 +2156,7 @@ label {
 }
 
 .border__top-3-dashed-blue-2 {
-  border-top: 3px dashed #262c7c60;
+  border-top: 3px dashed var(--blue-grey);
 }
 
 .border__top-15-white {
@@ -2403,7 +2406,7 @@ label {
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: var(--main-text);
 }
 
 .pull-left {
@@ -5012,13 +5015,13 @@ label {
 }
 
 .checkbox__custom:disabled + label {
-  color: #b8b8b8;
+  color: var(--grey-var);
   cursor: auto;
 }
 
 .checkbox__custom:disabled + label:before {
   box-shadow: none;
-  background: #ddd;
+  background: var(--grey-bg);
 }
 
 .checkbox__custom:checked + label:after,
@@ -5140,10 +5143,10 @@ label {
 }
 
 .file__custom + label b {
-  color: #504c4c;
-  background-color: #d0d0d0;
+  color: var(--grey-var-2);
+  background-color: var(--grey-var-3);
   display: inline-block;
-  font-family: 'SourceSansPro-Regular';
+  font-family: var(--main-font);
   font-weight: normal;
   border-radius: 0.25rem;
   padding: 15px 15px 16px;
