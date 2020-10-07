@@ -3806,7 +3806,7 @@ label {
 .land__head {
   background-image: url('../img/landing/vermieterclub_home_hero_mobile.jpg');
   background-repeat: no-repeat;
-  min-height: 550px;
+  min-height: 470px;
   position: relative;
   background-size: 160% auto;
   background-position: right -150px top -39px;
@@ -3815,7 +3815,7 @@ label {
 }
 
 .lead__head-top {
-  min-height: 550px;
+  min-height: 470px;
 }
 
 .land__head-content {
@@ -3904,14 +3904,14 @@ label {
 @media (min-width: 400px) {
   .land__head {
     background-size: 120% auto;
-    background-position: right -80px top;
+    background-position: right -80px top -20px;
   }
 }
 
 @media (min-width: 576px) {
   .land__head {
     background-size: cover;
-    background-position: right -355px bottom 50px;
+    background-position: right -280px bottom 50px;
     background-image: url('../img/landing/vermieterclub_home_hero.jpg');
   }
 
@@ -3941,7 +3941,7 @@ label {
   }
 
   .land__head {
-    background-position: right -150px bottom;
+    background-position: right -60px bottom;
   }
 
   .land__head-content {
